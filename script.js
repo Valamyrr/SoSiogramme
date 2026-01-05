@@ -88,7 +88,7 @@ async function bootstrapData() {
     //loadCsv("https://valamyrr.github.io/SoSiogramme/relations.csv")
   ]);
 
-  nomsPersos = persos.push({ id: "perso9", nom: "Alesund", image: "https://i.ibb.co/MkmYb6kg/alesund.png", groupe: "Ariestiens" });
+  nomsPersos = persos
   relations = [];
 
   resolveDataReady();
