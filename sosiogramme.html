@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cinzel:wght@400..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      display: flex;
+      background-image: url('https://2img.net/i.imgur.com/YZewUW7.png');
+    }
+
+    .sidebar {
+      width: 250px;
+      height: 100vh;
+      background: rgba(19, 19, 19, 0.6);
+      overflow-y: auto;
+      padding: 20px;
+      box-sizing: border-box;
+      z-index: 10;
+    }
+
+    .sidebar-section {
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
+    
+         .sidebar::-webkit-scrollbar{
+  width: 4px;
+  }
+  .sidebar::-webkit-scrollbar-thumb{
+  background-image: linear-gradient(to bottom, rgb(70, 6, 6) 0%, rgb(198, 3, 3) 100%);
+  }
+
+    .sidebar-section:last-child {
+      border-bottom: none;
+    }
+
+    .sidebar-section h3 {
+      margin: 0 0 5px 0;
+      font-size: 16px;
+      font-weight: 300;
+      color: #a79c99;
+      font-family: 'Cinzel';
+    }
+
+    .sidebar-section p {
+      font-size: 12px;
+      line-height: 1.5;
+      color: #a79c99;
+      font-family: 'Merriweather';
+      margin: 0;
+    }
+
+    .sidebar input[type="text"] {
+      width: 182px;
+      background: rgba(13, 13, 13, 0.8);
+      font-size: 14px;
+      border: none;
+      box-shadow: 0 0 4px 0px #0d0d0d;
+      font-family: 'Cinzel';
+      padding: 10px 8px 10px 8px;
+      color: #a79c99;
+    }
+
+    .sidebar label {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 12px;
+      font-family: 'Merriweather';
+      cursor: pointer;
+      color: #a79c99;
+    }
+
+    .sidebar input[type="checkbox"] {
+      margin-right: 8px;
+      cursor: pointer;
+    }
+
+    .sidebar button {
+    width: 100%;
+    padding: 10px;
+    background: rgba(19, 19, 19, 0.6);
+    border: none;
+    color: #a79c99;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: 'Merriweather';
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px 1px #000000bd;
+    }
+
+    .sidebar button:hover {
+    color: #bf3131 !important
+    }
+
+    #graphe-container {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      background: #0d0d0db0;
+    }
+    
+    ::selection{
+    background: transparent;
+    }
+    
+    .sidebar-section input[type="checkbox"]:checked {
+    background-color: #C21108;
+}
+    
+    input[type="checkbox"][data-type="alliance"]:checked {
+  background: #256DFA;
+}
+    
+        input[type="checkbox"][data-type="enfance"]:checked {
+  background: #FFE14A;
+}
+    
+        input[type="checkbox"][data-type="amour"]:checked {
+  background: #E92746;
+}
+    
+        input[type="checkbox"][data-type="amitié"]:checked {
+  background: #FFD100;
+}
+    
+        input[type="checkbox"][data-type="compliqué"]:checked {
+  background: #FF854E;
+}
+    
+        input[type="checkbox"][data-type="divorcés"]:checked {
+  background: #A3ADB8;
+}
+    
+        input[type="checkbox"][data-type="famille"]:checked {
+  background: #5BCC5D;
+}
+    
+        input[type="checkbox"][data-type="guidance"]:checked {
+  background: #66FFF2;
+}
+    
+        input[type="checkbox"][data-type="hostilité"]:checked {
+  background: #A91B1B;
+}
+    
+        input[type="checkbox"][data-type="mépris"]:checked {
+  background: #8999AC;
+}
+    
+        input[type="checkbox"][data-type="obsession"]:checked {
+  background: #7D8FFF;
+}
+    
+            input[type="checkbox"][data-type="rivalité"]:checked {
+  background: #FF6F3C;
+}
+    
+        input[type="checkbox"][data-type="servilité"]:checked {
+  background: #B6A893;
+}
+    
+        input[type="checkbox"][data-type="trahison"]:checked {
+  background: #BDF948;
+}
+    
+            input[type="checkbox"][data-type="affection"]:checked {
+  background: #FF8DE3;
+}
+    
+        input[type="checkbox"][data-type="oublié"]:checked {
+  background: #8956E8;
+}
+    
+        input[type="checkbox"][data-type="tolère"]:checked {
+  background: #FFB4DF;
+}
+    
+            input[type="checkbox"][data-type="respecte"]:checked {
+  background: #8FFF5A;
+}
+    
+            input[type="checkbox"][data-type="fratrie"]:checked {
+  background: #F08C00;
+}
+    
+    
+                input[type="checkbox"][data-group="Ariestiens"]:checked {
+  background: #6ac889;
+}
+    
+        input[type="checkbox"][data-group="Terriens"]:checked {
+  background: #C21108;
+}
+    
+        input[type="checkbox"][data-group="Gardiens"]:checked {
+  background: #F08C00;
+}
+    
+            input[type="checkbox"][data-group="Elus"]:checked {
+  background: #289DDC;
+}
+    
+            input[type="checkbox"][data-group="Damnés"]:checked {
+  background: #8956E8;
+}
+    
+    .sidebar-section #searchName p{
+	outline: none;
+}
+
+.sidebar-section #searchName:focus{
+outline: none;
+}
+    
+    .inputbox:focus{
+	outline: none;
+}
+    
+    .sidebar-section input[type="checkbox"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    box-shadow: 0px 0 8px 2px #0e0e0e;
+    border-radius: 4px;
+    background-color: #1c1c1c;
+    vertical-align: middle;
+    margin-right: 6px;
+    margin-top: -3px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+    #graphe {
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      touch-action: none;
+      cursor: grab;
+      display: block;
+    }
+
+    .link { 
+      stroke-width: 2px; 
+      opacity: 0.7;
+      fill: none;
+    }
+
+    .node-image {
+      pointer-events: none;
+      clip-path: circle(35px at 35px 35px);
+    }
+    
+    .node-name-bg {
+  fill: rgba(0, 0, 0, 0.5);  /* ← Couleur du fond */
+}
+    
+    .node text {
+      font-size: 14px;
+      fill: white;
+      padding-top: 5px;
+      font-family: 'Cinzel';
+      text-anchor: middle;
+    }
+
+    .node { cursor: pointer; }
+    
+    .node.selected circle {
+      stroke-width: 10;
+      filter: drop-shadow(0 0 8px currentColor);
+    }
+    
+    @keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+.node.selected circle {
+  stroke-width: 10;
+  filter: drop-shadow(0 0 8px #ffe0b3);
+  animation: pulse 2s ease-in-out infinite;
+}
+    
+    /* Modal styles */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-overlay.active {
+  display: flex;
+}
+
+.modal-content {
+  background: rgba(19, 19, 19, 0.95);
+  border: 2px solid #c21208;
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 0 30px rgba(194, 18, 8, 0.5);
+}
+
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, rgb(70, 6, 6) 0%, rgb(198, 3, 3) 100%);
+  border-radius: 4px;
+}
+
+.modal-content h2 {
+  font-family: 'Cinzel';
+  color: #a79c99;
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-family: 'Merriweather';
+  color: #a79c99;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  background: rgba(13, 13, 13, 0.8);
+  border: 1px solid #3a3a3a;
+  color: #a79c99;
+  font-family: 'Cinzel';
+  font-size: 14px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #c21208;
+}
+
+.relation-item {
+  background: rgba(13, 13, 13, 0.5);
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #3a3a3a;
+}
+
+.relation-item select {
+  margin-bottom: 10px;
+}
+
+.relation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.relation-header span {
+  font-family: 'Merriweather';
+  color: #a79c99;
+  font-size: 12px;
+}
+
+.btn-remove-relation {
+  background: #a91b1b;
+  border: none;
+  color: #d9d9d9;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: 'Merriweather';
+  font-size: 11px;
+transition: 0.3s;
+    }
+
+.btn-remove-relation:hover {
+  background: #c21208;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  flex: 1;
+  padding: 12px;
+  background: rgba(19, 19, 19, 0.6);
+  border: none;
+  color: #a79c99;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: 'Merriweather';
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px 1px #000000bd;
+}
+
+.modal-buttons button:hover {
+  color: #bf3131;
+}
+
+.code-output {
+  display: none;
+  margin-top: 20px;
+}
+
+.code-output.active {
+  display: block;
+}
+
+.code-block {
+  background: rgba(13, 13, 13, 0.9);
+  border: 1px solid #c21208;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.code-block h3 {
+  font-family: 'Cinzel';
+  color: #c21208;
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+
+.code-block pre {
+  background: #0a0a0a;
+  padding: 10px;
+  border-radius: 3px;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  color: #6ac889;
+  font-size: 12px;
+  margin: 0;
+}
+
+.code-block button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+  background: #c21208;
+  border: none;
+  color: #fff;
+  font-family: 'Merriweather';
+  font-size: 11px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.code-block button:hover {
+  background: #a91b1b;
+}
+
+.search-results::-webkit-scrollbar {
+  width: 6px;
+}
+
+.search-results::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, rgb(70, 6, 6) 0%, rgb(198, 3, 3) 100%);
+  border-radius: 3px;
+}
+
+.instructions {
+  background: rgba(240, 140, 0, 0.1);
+  border: 1px solid #f08c00;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.instructions p {
+  font-family: 'Merriweather';
+  color: #a79c99;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 0;
+}
+    
+/* Menu déroulant personnalisé */
+.form-group select option {
+  background: #1a1a1a;
+  color: #a79c99;
+  padding: 8px;
+}
+
+.form-group select option:hover {
+  background: #2a2a2a;
+}
+
+/* Couleurs pour les options de groupes */
+#persoGroupe option[value="Ariestiens"] {
+  color: #6ac889;
+  font-weight: bold;
+}
+
+#persoGroupe option[value="Terriens"] {
+  color: #C21108;
+  font-weight: bold;
+}
+
+#persoGroupe option[value="Gardiens"] {
+  color: #F08C00;
+  font-weight: bold;
+}
+
+#persoGroupe option[value="Elus"] {
+  color: #289DDC;
+  font-weight: bold;
+}
+
+#persoGroupe option[value="Damnés"] {
+  color: #8956E8;
+  font-weight: bold;
+}
+   
+    
+    
+             #codePerso::-webkit-scrollbar{
+  height: 4px;
+  }
+  #codePerso::-webkit-scrollbar-thumb{
+  background-image: linear-gradient(to bottom, rgb(70, 6, 6) 0%, rgb(198, 3, 3) 100%);
+  }
+    
+    
+                 #codeRelations::-webkit-scrollbar{
+  height: 4px;
+  }
+ #codeRelations::-webkit-scrollbar-thumb{
+  background-image: linear-gradient(to bottom, rgb(70, 6, 6) 0%, rgb(198, 3, 3) 100%);
+  }
+    
+  </style>
+</head>
+<body><div class="sidebar">
+  <div style="margin-bottom: 10px; padding-bottom: 0px;" class="sidebar-section">
+    <h3>Description</h3>
+    <div style="height: 1px; background: linear-gradient(-90deg, #0d0d0d4a 10%, #ea731c 40%, #c21208 100%); margin-bottom: 15px;"></div>
+    <p>Cliquez sur un personnage pour afficher ses relations. Cliquez à nouveau pour les masquer.</p>
+    <button id="resetBtn">Tout réinitialiser</button>
+    <button id="addPersoBtn" style="margin-top: 10px;">Ajouter mon personnage</button>
+    <button id="updatePersoBtn" style="margin-top: 10px;">Ajouter des relations</button>
+  </div>
+
+  <div class="sidebar-section">
+    <h3>Rechercher</h3>
+    <div style="height: 1px; background: linear-gradient(-90deg, #0d0d0d4a 10%, #ea731c 40%, #c21208 100%); margin-bottom: 15px;"></div>
+    <input style="margin-bottom: -20px;" type="text" id="searchName" placeholder="Nom du personnage...">
+  </div>
+
+  <div style="margin-top: 10px; margin-bottom: 0px; padding-bottom: 0px;" class="sidebar-section">
+    <h3 style="margin-top: -15px;">Relations</h3>
+    <div style="height: 1px; background: linear-gradient(-90deg, #0d0d0d4a 10%, #ea731c 40%, #c21208 100%); margin-bottom: 15px;"></div>
+    <label><input type="checkbox" checked data-type="affection">Affection</label>
+    <label><input type="checkbox" checked data-type="alliance">Alliance</label>
+    <label><input type="checkbox" checked data-type="enfance">Amis d'enfance</label>
+    <label><input type="checkbox" checked data-type="amour">Amour</label>
+    <label><input type="checkbox" checked data-type="amitié">Amitié</label>
+    <label><input type="checkbox" checked data-type="compliqué">Compliqué</label>
+    <label><input type="checkbox" checked data-type="divorcés">Ex/divorcés</label>
+    <label><input type="checkbox" checked data-type="famille">Famille</label>
+    <label><input type="checkbox" checked data-type="fratrie">Fratrie gardienne</label>
+    <label><input type="checkbox" checked data-type="guidance">Mentor - disciple</label>
+    <label><input type="checkbox" checked data-type="hostilité">Hostilité</label>
+    <label><input type="checkbox" checked data-type="mépris">Mépris</label>
+    <label><input type="checkbox" checked data-type="obsession">Obsession</label>
+    <label><input type="checkbox" checked data-type="oublié">Oublié</label>
+    <label><input type="checkbox" checked data-type="respecte">Respect</label>
+    <label><input type="checkbox" checked data-type="rivalité">Rivalité</label>
+    <label><input type="checkbox" checked data-type="servilité">Servilité</label>
+    <label><input type="checkbox" checked data-type="tolère">Tolérance</label>
+    <label><input type="checkbox" checked data-type="trahison">Trahison</label>
+  </div>
+
+    <button id="toggleRelationsBtn" style="margin-top: 10px;">Tout décocher</button>
+      
+  <div style="margin-top: 10px; margin-bottom: 10px; padding-bottom: 0px;" class="sidebar-section">
+    <h3>Groupes</h3>
+    <div style="height: 1px; background: linear-gradient(-90deg, #0d0d0d4a 10%, #ea731c 40%, #c21208 100%); margin-bottom: 15px;"></div>
+    <label style="color: #6ac889;"><input type="checkbox" checked data-group="Ariestiens">Ariestiens</label>
+    <label style="color: #C21108;"><input type="checkbox" checked data-group="Terriens">Terriens</label>
+    <label style="color: #F08C00;"><input type="checkbox" checked data-group="Gardiens">Gardiens</label>
+    <label style="color: #289DDC;"><input type="checkbox" checked data-group="Elus">Élus</label>
+    <label style="color: #8956E8;"><input type="checkbox" checked data-group="Damnés">Damnés</label>
+  </div>
+      
+    <button id="toggleGroupesBtn" style="margin-top: 10px;">Tout décocher</button>
+      
+</div><div id="graphe-container">
+  <svg id="graphe">
+    <defs id="arrowDefs"></defs>
+  </svg>
+</div>
+
+      
+      <!-- Modal pour ajouter un personnage --><div class="modal-overlay" id="addPersoModal">
+  <div class="modal-content">
+    <h2>Ajouter mon personnage</h2>
+    
+    <div class="instructions">
+      <p><strong>Instructions :</strong><br/>
+       Remplissez ce formulaire pour générer les relations de votre personnage. 
+        <br/>Vous devez impérativement :
+        <br/>❖ Remplir le nom du personnage
+        <br/>❖ Fournir une image en 100x100px hébergée 
+        <br/>❖ Sélectionner le groupe du personnage
+        <br/>
+        <br/>Une fois ces étapes faites, cliquez sur le bouton "ajouter une relation". 
+        <br/>Vous pourrez alors choisir le personnage concerné et définir votre relation avec ce dernier. 
+        <br/>Une fois le code généré, copiez-le et envoyez le sur le channel dédié sur discord pour qu'un administrateur l'ajoute au sociogramme.</p>
+    </div>
+    
+    <div class="form-group">
+      <label for="persoNom">Nom du personnage *</label>
+      <input type="text" id="persoNom" placeholder="Ex: Yang" required>
+        <small style="color: #8999AC; font-size: 11px; font-family: 'Merriweather';">Mettez uniquement le prénom ou surnom ou la façon dont on désigne votre personnage.</small>
+    </div>
+    
+    <div class="form-group">
+      <label for="persoImage">URL de l'image *</label>
+      <input type="text" id="persoImage" placeholder="https://i.ibb.co/xxxxx/image.png" required>
+      <small style="color: #8999AC; font-size: 11px; font-family: 'Merriweather';">Hébergez votre image 100x100 sur imgur.com ou autre site du genre</small>
+    </div>
+    
+    <div class="form-group">
+      <label for="persoGroupe">Groupe *</label>
+      <select id="persoGroupe" required>
+        <option value="">-- Sélectionnez un groupe --</option>
+        <option value="Ariestiens">Ariestiens</option>
+        <option value="Terriens">Terriens</option>
+        <option value="Gardiens">Gardiens</option>
+        <option value="Elus">Élus</option>
+        <option value="Damnés">Damnés</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <label>Relations</label>
+            <small style="color: #8999AC; font-size: 11px; font-family: 'Merriweather';">L'ordre des relations n'a pas d'importance. Si vous souhaitez renseigner une relation avec le personnage d'un membre, coordonnez-vous pour que UN SEUL d'entre vous la déclare ! (elles apparaissent en double sinon)</small>
+      <div id="relationsContainer"></div>
+      <button type="button" id="addRelationBtn" style="width: 100%; padding: 8px; background: rgba(19, 19, 19, 0.6); border: none; color: #a79c99; font-size: 11px; font-family: 'Merriweather'; text-transform: uppercase; cursor: pointer; border-radius: 5px; margin-top: 10px;">+ Ajouter une relation</button>
+    </div>
+    
+    <div class="modal-buttons">
+      <button type="button" id="generateCodeBtn">Générer le code</button>
+      <button type="button" id="closeModalBtn">Annuler</button>
+    </div>
+    
+    <div class="code-output" id="codeOutput">
+      <div class="code-block">
+        <h3>Bloc 1 : Personnage</h3>
+        <pre id="codePerso"></pre>
+        <button onclick="copyCode('codePerso')">Copier</button>
+      </div>
+      
+      <div class="code-block" id="codeRelationsBlock" style="display: none;">
+        <h3>Bloc 2 : Relations</h3>
+        <pre id="codeRelations"></pre>
+        <button onclick="copyCode('codeRelations')">Copier</button>
+      </div>
+      
+      <div class="instructions" style="margin-top: 15px;">
+        <p><strong>Prochaines étapes :</strong><br/>
+        1. Copiez les deux blocs de code ci-dessus<br/>
+        2. Dans votre post dans le salon #relations sur discord<br/>
+          3. Envoyez les codes précédemments copiés<br/>
+        4. Attendez patiemment qu'un admin passe vous ajouter !</p>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+    <!-- Modal pour ajouter des relations à un personnage existant --><div class="modal-overlay" id="updatePersoModal">
+  <div class="modal-content">
+    <h2>Ajouter des relations</h2>
+    
+    <div class="instructions">
+      <p><strong>Instructions :</strong><br/>
+       Utilisez ce formulaire pour ajouter de nouvelles relations à votre personnage existant.
+        <br/>❖ Sélectionnez votre personnage dans la liste
+        <br/>❖ Ajoutez vos nouvelles relations
+        <br/>❖ Générez le code et envoyez le dans votre post dans le channel #relations du discord
+        <br/>
+        <br/>Note : Coordonnez-vous avec les autres membres pour éviter les doublons de relations.</p>
+    </div>
+    
+    <div class="form-group">
+      <label for="updatePersoSelect">Mon personnage *</label>
+      <div style="position: relative;">
+        <input type="text" 
+               id="updatePersoSearch" 
+               placeholder="Rechercher mon personnage..."
+               autocomplete="off"
+               style="width: 100%; padding: 10px; background: rgba(13, 13, 13, 0.8); border: 1px solid #3a3a3a; color: #a79c99; font-family: 'Cinzel'; font-size: 14px; border-radius: 5px; box-sizing: border-box;">
+        <div id="updatePersoResults" style="display: none; position: absolute; top: 100%; left: 0; right: 0; background: rgba(13, 13, 13, 0.95); border: 1px solid #c21208; border-radius: 5px; max-height: 200px; overflow-y: auto; z-index: 1000; margin-top: 5px;"></div>
+        <input type="hidden" id="updatePersoSelect" value="">
+      </div>
+      <small style="color: #8999AC; font-size: 11px; font-family: 'Merriweather';">Tapez le nom de votre personnage pour le rechercher</small>
+    </div>
+    
+    <div class="form-group">
+      <label>Nouvelles relations</label>
+      <small style="color: #8999AC; font-size: 11px; font-family: 'Merriweather';">Ajoutez uniquement les nouvelles relations que vous souhaitez créer.</small>
+      <div id="updateRelationsContainer"></div>
+      <button type="button" id="addUpdateRelationBtn" style="width: 100%; padding: 8px; background: rgba(19, 19, 19, 0.6); border: none; color: #a79c99; font-size: 11px; font-family: 'Merriweather'; text-transform: uppercase; cursor: pointer; border-radius: 5px; margin-top: 10px;">+ Ajouter une relation</button>
+    </div>
+    
+    <div class="modal-buttons">
+      <button type="button" id="generateUpdateCodeBtn">Générer le code</button>
+      <button type="button" id="closeUpdateModalBtn">Annuler</button>
+    </div>
+    
+    <div class="code-output" id="updateCodeOutput">
+      <div class="code-block">
+        <h3>Code des nouvelles relations</h3>
+        <pre id="updateCodeRelations"></pre>
+        <button onclick="copyCode('updateCodeRelations')">Copier</button>
+      </div>
+      
+      <div class="instructions" style="margin-top: 15px;">
+        <p><strong>Prochaines étapes :</strong><br/>
+        1. Copiez le code ci-dessus<br/>
+        2. Postez-le dans le salon #relations sur discord<br/>
+        3. Attendez qu'un admin l'ajoute à votre personnage!</p>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<script>
+const svg = document.getElementById("graphe");
+const grapheContainer = document.getElementById("graphe-container");
+const NS = "http://www.w3.org/2000/svg";
+
+let width = grapheContainer.clientWidth;
+let height = grapheContainer.clientHeight;
+
+const groupes = {
+  Ariestiens: "#6AC889",
+  Terriens: "#C21108",
+  Gardiens: "#F08C00",
+  Elus: "#289DDC",
+  Damnés: "#8956E8"
+};
+
+const relationsColors = {
+  alliance: "#256DFA",
+  enfance: "#FFE14A",
+  amour: "#E92746",
+  amitié: "#FFD100",
+  compliqué: "#FF854E",
+  divorcés: "#A3ADB8",
+  famille: "#5BCC5D",
+  guidance: "#66FFF2",
+  hostilité: "#A91B1B",
+  mépris: "#8999AC",
+  obsession: "#7D8FFF",
+  rivalité: "#FF6F3C",
+  servilité: "#B6A893",
+  trahison: "#BDF948",
+  affection: "#FF8DE3",
+  oublié: "#8956E8",
+  tolère: "#FFB4DF",
+  respecte: "#8FFF5A",
+  fratrie: "#F08C00",
+};
+  
+const relationsLabels = {
+  fratrie: "fratrie gardienne",
+  enfance: "amis d'enfance",
+  guidance: "mentor - disciple",
+  divorcés: "ex - divorcés",
+};
+
+function getRelationLabel(type) {
+  return relationsLabels[type] || type;
+}
+
+const nomsPersos = [
+  { id: "perso9", nom: "Alesund", image: "https://i.ibb.co/MkmYb6kg/alesund.png", groupe: "Ariestiens" },
+];
+
+function csvToJson(csv) {
+  const lines = csv.trim().split("\n");
+  const headers = lines.shift().split(",");
+  return lines.map((line, index) => {
+    const values = line.split(",");
+    const obj = { id: index + 1 };
+    headers.forEach((h, i) => {
+      obj[h.trim()] = values[i]?.trim();
+    });
+    return obj;
+  });
+}
+
+fetch("https://raw.githubusercontent.com/Valamyrr/SoSiogramme/main/personnages.csv")
+  .then(res => res.text())
+  .then(csv => {
+    const data = csvToJson(csv);
+    console.log(data);
+    nomsPersos = data;
+  });
+
+
+const personnages = nomsPersos.map(p => ({
+  ...p,
+  x: Math.random() * width,
+  y: Math.random() * height
+}));
+
+const relations = [
+  //{ source: "perso10", cible: "perso12", typeAversB: "divorcés", typeBversA: "fratrie" }
+];
+
+let selectedPersonnages = new Set();
+let zoom = 1;
+let draggingNode = null;
+let panX = 0;
+let panY = 0;
+let isPanning = false;
+let panStartX = 0;
+let panStartY = 0;
+
+function createArrowMarkers() {
+  const defs = document.getElementById("arrowDefs");
+  defs.innerHTML = "";
+  
+  Object.entries(relationsColors).forEach(([type, color]) => {
+    const marker = document.createElementNS(NS, "marker");
+    marker.setAttribute("id", `arrow-${type}`);
+    marker.setAttribute("markerWidth", "10");
+    marker.setAttribute("markerHeight", "10");
+    marker.setAttribute("refX", "8");
+    marker.setAttribute("refY", "3");
+    marker.setAttribute("orient", "auto");
+    marker.setAttribute("markerUnits", "strokeWidth");
+    
+    const path = document.createElementNS(NS, "path");
+    path.setAttribute("d", "M0,0 L0,6 L9,3 z");
+    path.setAttribute("fill", color);
+    marker.appendChild(path);
+    defs.appendChild(marker);
+
+    const markerReverse = document.createElementNS(NS, "marker");
+    markerReverse.setAttribute("id", `arrow-reverse-${type}`);
+    markerReverse.setAttribute("markerWidth", "10");
+    markerReverse.setAttribute("markerHeight", "10");
+    markerReverse.setAttribute("refX", "1");
+    markerReverse.setAttribute("refY", "3");
+    markerReverse.setAttribute("orient", "auto");
+    markerReverse.setAttribute("markerUnits", "strokeWidth");
+    
+    const pathReverse = document.createElementNS(NS, "path");
+    pathReverse.setAttribute("d", "M9,0 L9,6 L0,3 z");
+    pathReverse.setAttribute("fill", color);
+    markerReverse.appendChild(pathReverse);
+    defs.appendChild(markerReverse);
+  });
+}
+
+function applyLinkForces(isDragging = false) {
+  // Si on drag un node mais qu'il n'est PAS sélectionné, pas de force de lien
+  if (isDragging && draggingNode && !selectedPersonnages.has(draggingNode.id)) {
+    return;
+  }
+  
+  const strength = isDragging ? 0.15 : 0.01;
+  relations.forEach(({ source, cible }) => {
+    const a = personnages.find(p => p.id === source);
+    const b = personnages.find(p => p.id === cible);
+    if (!a || !b) return;
+    
+    // Si on est en train de drag, appliquer la force seulement si un des deux est le node draggé
+    if (isDragging && draggingNode && (a !== draggingNode && b !== draggingNode)) {
+      return;
+    }
+    
+    const dx = b.x - a.x;
+    const dy = b.y - a.y;
+    const dist = Math.max(1, Math.sqrt(dx * dx + dy * dy));
+    const desiredDist = 200;
+    const force = strength * (dist - desiredDist);
+    const fx = force * (dx / dist);
+    const fy = force * (dy / dist);
+    
+    // Si on drag un node, seul l'autre node bouge
+    if (isDragging && draggingNode) {
+      if (a === draggingNode) {
+        b.x -= fx * 2;
+        b.y -= fy * 2;
+      } else if (b === draggingNode) {
+        a.x += fx * 2;
+        a.y += fy * 2;
+      }
+    } else {
+      a.x += fx;
+      a.y += fy;
+      b.x -= fx;
+      b.y -= fy;
+    }
+  });
+}
+
+function applyCollisions(skipDragging = false) {
+  const nodeRadius = 70;
+  for (let i = 0; i < personnages.length; i++) {
+    for (let j = i + 1; j < personnages.length; j++) {
+      const a = personnages[i];
+      const b = personnages[j];
+      
+      // Skip collision UNIQUEMENT si on drag ET qu'aucun des deux n'est sélectionné
+      if (skipDragging && draggingNode && (a === draggingNode || b === draggingNode)) {
+        // Si le nœud draggé EST sélectionné, on applique quand même les collisions
+        if (!selectedPersonnages.has(draggingNode.id)) {
+          continue;
+        }
+      }
+      
+      const dx = b.x - a.x;
+      const dy = b.y - a.y;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      const minDist = nodeRadius * 2;
+      
+      if (dist < minDist && dist > 0) {
+        const overlap = minDist - dist;
+        const moveX = (dx / dist) * overlap * 0.5;
+        const moveY = (dy / dist) * overlap * 0.5;
+        
+        // Si a est sélectionné mais pas b, seul b bouge
+        if (selectedPersonnages.has(a.id) && !selectedPersonnages.has(b.id)) {
+          b.x += moveX * 2;
+          b.y += moveY * 2;
+        }
+        // Si b est sélectionné mais pas a, seul a bouge
+        else if (selectedPersonnages.has(b.id) && !selectedPersonnages.has(a.id)) {
+          a.x -= moveX * 2;
+          a.y -= moveY * 2;
+        }
+        // Sinon comportement normal (les deux bougent)
+        else {
+          a.x -= moveX;
+          a.y -= moveY;
+          b.x += moveX;
+          b.y += moveY;
+        }
+      }
+    }
+  }
+  
+  personnages.forEach(p => {
+    const margin = 80;
+    p.x = Math.max(margin, Math.min(width - margin, p.x));
+    p.y = Math.max(margin, Math.min(height - margin, p.y));
+  });
+}
+
+function draw(isDragging = false, skipForces = false) {
+  if (!skipForces) {
+    applyLinkForces(isDragging);
+    applyCollisions(isDragging);
+  }
+  svg.innerHTML = '<defs id="arrowDefs"></defs>';
+  
+  // Créer un groupe pour appliquer le zoom et le pan
+  const mainGroup = document.createElementNS(NS, "g");
+  mainGroup.setAttribute("transform", `translate(${panX}, ${panY}) scale(${zoom})`);
+  
+  createArrowMarkers();
+
+  const show = Array.from(document.querySelectorAll('.sidebar input[data-type]:checked')).map(c => c.dataset.type);
+  const activeGroups = Array.from(document.querySelectorAll('.sidebar input[data-group]:checked')).map(c => c.dataset.group);
+  const search = document.getElementById("searchName").value.toLowerCase();
+
+  let filteredIds = new Set();
+  if (search) {
+    const match = personnages.find(p => p.nom.toLowerCase().includes(search));
+    if (match) {
+      filteredIds.add(match.id);
+      relations.forEach(r => {
+        if (r.source === match.id) filteredIds.add(r.cible);
+        if (r.cible === match.id) filteredIds.add(r.source);
+      });
+    }
+  }
+
+  // Dessiner les relations UNIQUEMENT si des personnages sont sélectionnés
+  if (selectedPersonnages.size > 0) {
+    relations.forEach(rel => {
+      const isRelated = selectedPersonnages.has(rel.source) || selectedPersonnages.has(rel.cible);
+      if (!isRelated) return;
+
+      const a = personnages.find(p => p.id === rel.source);
+      const b = personnages.find(p => p.id === rel.cible);
+      if (!a || !b) return;
+      if (!activeGroups.includes(a.groupe) || !activeGroups.includes(b.groupe)) return;
+      if (search && (!filteredIds.has(rel.source) || !filteredIds.has(rel.cible))) return;
+
+      const showAtoB = show.includes(rel.typeAversB);
+      const showBtoA = show.includes(rel.typeBversA);
+      
+      if (!showAtoB && !showBtoA) return;
+
+      const dx = b.x - a.x;
+      const dy = b.y - a.y;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      const angle = Math.atan2(dy, dx);
+      
+      const nodeRadius = 35;
+      const shortenDist = nodeRadius + 5;
+      const ratio = shortenDist / dist;
+
+      const isSameType = rel.typeAversB === rel.typeBversA;
+      const bothVisible = showAtoB && showBtoA;
+      
+      if (isSameType && bothVisible) {
+        const x1 = a.x + (dx * ratio);
+        const y1 = a.y + (dy * ratio);
+        const x2 = b.x - (dx * ratio);
+        const y2 = b.y - (dy * ratio);
+
+        const line = document.createElementNS(NS, "line");
+        line.setAttribute("x1", x1);
+        line.setAttribute("y1", y1);
+        line.setAttribute("x2", x2);
+        line.setAttribute("y2", y2);
+        line.setAttribute("stroke", relationsColors[rel.typeAversB]);
+        line.setAttribute("marker-end", `url(#arrow-${rel.typeAversB})`);
+        line.setAttribute("marker-start", `url(#arrow-reverse-${rel.typeAversB})`);
+        line.classList.add("link");
+        mainGroup.appendChild(line);
+        
+        // Ajouter le texte au milieu du lien
+        const midX = (x1 + x2) / 2;
+        const midY = (y1 + y2) / 2;
+        let lineAngle = Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI;
+        
+        // Garder le texte lisible (éviter qu'il soit à l'envers)
+        if (lineAngle > 90 || lineAngle < -90) {
+          lineAngle += 180;
+        }
+        
+        const textLabel = document.createElementNS(NS, "text");
+        textLabel.setAttribute("x", midX);
+        textLabel.setAttribute("y", midY - 10);
+        textLabel.setAttribute("fill", relationsColors[rel.typeAversB]);
+        textLabel.setAttribute("font-size", "11");
+        textLabel.setAttribute("font-family", "Merriweather");
+        textLabel.setAttribute("text-anchor", "middle");
+        textLabel.setAttribute("pointer-events", "none");
+        textLabel.setAttribute("transform", `rotate(${lineAngle}, ${midX}, ${midY})`);
+        textLabel.textContent = getRelationLabel(rel.typeAversB);
+        mainGroup.appendChild(textLabel);
+      } else {
+        const offsetDist = 5;
+        const perpX = -Math.sin(angle) * offsetDist;
+        const perpY = Math.cos(angle) * offsetDist;
+
+        if (showAtoB) {
+          const x1 = a.x + perpX + (dx * ratio);
+          const y1 = a.y + perpY + (dy * ratio);
+          const x2 = b.x + perpX - (dx * ratio);
+          const y2 = b.y + perpY - (dy * ratio);
+
+          const line1 = document.createElementNS(NS, "line");
+          line1.setAttribute("x1", x1);
+          line1.setAttribute("y1", y1);
+          line1.setAttribute("x2", x2);
+          line1.setAttribute("y2", y2);
+          line1.setAttribute("stroke", relationsColors[rel.typeAversB]);
+          line1.setAttribute("marker-end", `url(#arrow-${rel.typeAversB})`);
+          line1.classList.add("link");
+          mainGroup.appendChild(line1);
+          
+          // Ajouter le texte pour A vers B (à l'extérieur)
+          // Ajouter le texte pour A vers B (à l'extérieur)
+          const midX1 = (x1 + x2) / 2;
+          const midY1 = (y1 + y2) / 2;
+          let lineAngle1 = Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI;
+          
+          // Garder le texte lisible (éviter qu'il soit à l'envers)
+          if (lineAngle1 > 90 || lineAngle1 < -90) {
+            lineAngle1 += 180;
+          }
+          
+          // Déterminer si cette ligne est au-dessus (perpY négatif = au-dessus)
+          const isAbove = perpY < 0;
+          const textDistance = isAbove ? 8 : 12;
+          const textOffsetX = perpX * (1 + textDistance / offsetDist);
+          const textOffsetY = perpY * (1 + textDistance / offsetDist);
+          
+          const textLabel1 = document.createElementNS(NS, "text");
+          textLabel1.setAttribute("x", midX1 + textOffsetX);
+          textLabel1.setAttribute("y", midY1 + textOffsetY);
+          textLabel1.setAttribute("fill", relationsColors[rel.typeAversB]);
+          textLabel1.setAttribute("font-size", "11");
+          textLabel1.setAttribute("font-family", "Merriweather");
+          textLabel1.setAttribute("text-anchor", "middle");
+          textLabel1.setAttribute("pointer-events", "none");
+          textLabel1.setAttribute("transform", `rotate(${lineAngle1}, ${midX1 + textOffsetX}, ${midY1 + textOffsetY})`);
+	  textLabel1.textContent = getRelationLabel(rel.typeAversB);
+          mainGroup.appendChild(textLabel1);
+        }
+
+        if (showBtoA) {
+          const x1 = b.x - perpX + (-dx * ratio);
+          const y1 = b.y - perpY + (-dy * ratio);
+          const x2 = a.x - perpX - (-dx * ratio);
+          const y2 = a.y - perpY - (-dy * ratio);
+
+          const line2 = document.createElementNS(NS, "line");
+          line2.setAttribute("x1", x1);
+          line2.setAttribute("y1", y1);
+          line2.setAttribute("x2", x2);
+          line2.setAttribute("y2", y2);
+          line2.setAttribute("stroke", relationsColors[rel.typeBversA]);
+          line2.setAttribute("marker-end", `url(#arrow-${rel.typeBversA})`);
+          line2.classList.add("link");
+          mainGroup.appendChild(line2);
+          
+          // Ajouter le texte pour B vers A (à l'extérieur)
+          const midX2 = (x1 + x2) / 2;
+          const midY2 = (y1 + y2) / 2;
+          let lineAngle2 = Math.atan2(y2 - y1, x2 - x1) * 180 / Math.PI;
+          
+          // Garder le texte lisible (éviter qu'il soit à l'envers)
+          if (lineAngle2 > 90 || lineAngle2 < -90) {
+            lineAngle2 += 180;
+          }
+          
+          // Déterminer si cette ligne est au-dessus (perpY positif = au-dessus pour B vers A)
+          const isAbove = perpY > 0;
+          const textDistance = isAbove ? 8 : 12;
+          const textOffsetX = -perpX * (1 + textDistance / offsetDist);
+          const textOffsetY = -perpY * (1 + textDistance / offsetDist);
+          
+          const textLabel2 = document.createElementNS(NS, "text");
+          textLabel2.setAttribute("x", midX2 + textOffsetX);
+          textLabel2.setAttribute("y", midY2 + textOffsetY);
+          textLabel2.setAttribute("fill", relationsColors[rel.typeBversA]);
+          textLabel2.setAttribute("font-size", "11");
+          textLabel2.setAttribute("font-family", "Merriweather");
+          textLabel2.setAttribute("text-anchor", "middle");
+          textLabel2.setAttribute("pointer-events", "none");
+          textLabel2.setAttribute("transform", `rotate(${lineAngle2}, ${midX2 + textOffsetX}, ${midY2 + textOffsetY})`);
+          textLabel2.textContent = getRelationLabel(rel.typeBversA);
+          mainGroup.appendChild(textLabel2);
+        }
+      }
+    });
+  }
+
+  // Dessiner les personnages
+  personnages.forEach(p => {
+    if (!activeGroups.includes(p.groupe)) return;
+    if (search && !filteredIds.has(p.id)) return;
+
+    const g = document.createElementNS(NS, "g");
+    g.setAttribute("class", selectedPersonnages.has(p.id) ? "node selected" : "node");
+    g.setAttribute("transform", `translate(${p.x},${p.y})`);
+
+    const circle = document.createElementNS(NS, "circle");
+    circle.setAttribute("r", 35);
+    circle.setAttribute("fill", "#fff");
+    circle.setAttribute("stroke", groupes[p.groupe] || "#666");
+    circle.setAttribute("stroke-width", selectedPersonnages.has(p.id) ? 10 : 8);
+    g.appendChild(circle);
+
+    const img = document.createElementNS(NS, "image");
+    img.setAttribute("href", p.icone || p.image);
+    img.setAttribute("x", -35);
+    img.setAttribute("y", -35);
+    img.setAttribute("width", 70);
+    img.setAttribute("height", 70);
+    img.setAttribute("class", "node-image");
+    g.appendChild(img);
+
+    // Mesurer le texte pour créer le background
+    const textContent = p.nom;
+    const fontSize = 14;
+    const estimatedWidth = textContent.length * (fontSize * 0.6) + 12; // Estimation de la largeur + padding
+    const textHeight = fontSize + 15; // Hauteur + padding (augmenté de 6 à 10)
+    const textY = 55; // Position Y du texte (décalée vers le bas)
+    
+    // PERSONNALISATION DU BLOC NOM :
+    const namePadding = 6; // Padding horizontal (3px de chaque côté)
+    const nameVerticalPadding = 0; // Padding vertical (augmenté de 3 à 5)
+    const borderRadius = 5; // Arrondi des coins
+    const nameOffsetY = 10; // Décalage vers le bas depuis l'icône
+    
+    // Créer le rectangle de fond
+    const bgRect = document.createElementNS(NS, "rect");
+    bgRect.setAttribute("x", -estimatedWidth / 2);
+    bgRect.setAttribute("y", 35 + nameOffsetY - nameVerticalPadding);
+    bgRect.setAttribute("width", estimatedWidth);
+    bgRect.setAttribute("height", textHeight);
+    bgRect.setAttribute("rx", borderRadius);
+    bgRect.setAttribute("ry", borderRadius);
+    bgRect.setAttribute("class", "node-name-bg");
+    g.appendChild(bgRect);
+
+    const text = document.createElementNS(NS, "text");
+    text.setAttribute("y", textY + nameOffsetY);
+    text.textContent = p.nom;
+    g.appendChild(text);
+
+    let isDragging = false, hasMoved = false, offsetX = 0, offsetY = 0;
+    
+    g.addEventListener("mousedown", e => {
+      e.stopPropagation();
+      e.preventDefault();
+      isDragging = true;
+      hasMoved = false;
+      draggingNode = p;
+      
+      const rect = svg.getBoundingClientRect();
+      const mouseX = (e.clientX - rect.left - panX) / zoom;
+      const mouseY = (e.clientY - rect.top - panY) / zoom;
+      
+      offsetX = mouseX - p.x;
+      offsetY = mouseY - p.y;
+      
+      svg.style.cursor = "grabbing";
+    });
+
+    const onMouseMove = (e) => {
+      if (isDragging && draggingNode === p) {
+        hasMoved = true;
+        
+        const rect = svg.getBoundingClientRect();
+        const mouseX = (e.clientX - rect.left - panX) / zoom;
+        const mouseY = (e.clientY - rect.top - panY) / zoom;
+        
+        p.x = mouseX - offsetX;
+        p.y = mouseY - offsetY;
+        
+        draw(true);
+      }
+    };
+
+    const onMouseUp = () => {
+      if (isDragging && draggingNode === p) {
+        isDragging = false;
+        draggingNode = null;
+        svg.style.cursor = "grab";
+        
+        if (!hasMoved) {
+          if (selectedPersonnages.has(p.id)) {
+            selectedPersonnages.delete(p.id);
+          } else {
+            selectedPersonnages.add(p.id);
+          }
+          draw(false, true);
+        }
+      }
+    };
+
+    window.addEventListener("mousemove", onMouseMove);
+    window.addEventListener("mouseup", onMouseUp);
+
+    mainGroup.appendChild(g);
+  });
+  
+  svg.appendChild(mainGroup);
+}
+
+document.getElementById("resetBtn").addEventListener("click", () => {
+  selectedPersonnages.clear();
+  document.getElementById("searchName").value = "";
+  draw(false, true);
+});
+
+document.getElementById("searchName").addEventListener("input", () => {
+  const search = document.getElementById("searchName").value.toLowerCase();
+  
+  selectedPersonnages.clear();
+  
+  if (search) {
+    // Trouver tous les personnages qui correspondent à la recherche
+    personnages.forEach(p => {
+      if (p.nom.toLowerCase().includes(search)) {
+        selectedPersonnages.add(p.id);
+      }
+    });
+  }
+  
+  draw();
+});
+
+document.querySelectorAll(".sidebar input[type='checkbox']").forEach(cb =>
+  cb.addEventListener("change", () => draw(false, true))
+);
+
+svg.addEventListener("wheel", e => {
+  e.preventDefault();
+  const zoomAmount = e.deltaY * -0.001;
+  const oldZoom = zoom;
+  zoom = Math.min(Math.max(0.5, zoom + zoomAmount), 3);
+  
+  // Ajuster le pan pour zoomer vers le centre de la souris
+  const rect = svg.getBoundingClientRect();
+  const mouseX = e.clientX - rect.left;
+  const mouseY = e.clientY - rect.top;
+  
+  panX = mouseX - (mouseX - panX) * (zoom / oldZoom);
+  panY = mouseY - (mouseY - panY) * (zoom / oldZoom);
+  
+  draw();
+});
+
+// Gestion du pan (déplacement du fond)
+svg.addEventListener("mousedown", e => {
+  if (e.target === svg || e.target.tagName === 'defs') {
+    isPanning = true;
+    panStartX = e.clientX - panX;
+    panStartY = e.clientY - panY;
+    svg.style.cursor = "grabbing";
+  }
+});
+
+window.addEventListener("mousemove", e => {
+  if (isPanning) {
+    panX = e.clientX - panStartX;
+    panY = e.clientY - panStartY;
+    draw();
+  }
+});
+
+window.addEventListener("mouseup", () => {
+  if (isPanning) {
+    isPanning = false;
+    svg.style.cursor = "grab";
+  }
+});
+
+window.addEventListener("resize", () => {
+  width = grapheContainer.clientWidth;
+  height = grapheContainer.clientHeight;
+});
+
+draw();
+
+const toggleRelationsBtn = document.getElementById("toggleRelationsBtn");
+const relationsCheckboxes = document.querySelectorAll('.sidebar input[data-type]');
+
+toggleRelationsBtn.addEventListener("click", () => {
+  const allChecked = Array.from(relationsCheckboxes).every(cb => cb.checked);
+  
+  relationsCheckboxes.forEach(cb => {
+    cb.checked = !allChecked;
+  });
+  
+  // Mettre à jour le texte du bouton
+  toggleRelationsBtn.textContent = allChecked ? "Tout cocher" : "Tout décocher";
+  
+  draw(false, true);
+});
+
+const toggleGroupesBtn = document.getElementById("toggleGroupesBtn");
+const groupesCheckboxes = document.querySelectorAll('.sidebar input[data-group]');
+
+toggleGroupesBtn.addEventListener("click", () => {
+  const allChecked = Array.from(groupesCheckboxes).every(cb => cb.checked);
+  
+  groupesCheckboxes.forEach(cb => {
+    cb.checked = !allChecked;
+  });
+  
+  // Mettre à jour le texte du bouton
+  toggleGroupesBtn.textContent = allChecked ? "Tout cocher" : "Tout décocher";
+  
+  draw(false, true);
+});
+
+
+
+// Changer la couleur du select selon le groupe choisi
+document.getElementById('persoGroupe').addEventListener('change', function() {
+  const groupeColors = {
+    'Ariestiens': '#6ac889',
+    'Terriens': '#C21108',
+    'Gardiens': '#F08C00',
+    'Elus': '#289DDC',
+    'Damnés': '#8956E8'
+  };
+  
+  this.style.color = groupeColors[this.value] || '#a79c99';
+});
+
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();  // Empêche l'ouverture du menu contextuel
+});
+
+</script>
+
+</body>
+</html>
