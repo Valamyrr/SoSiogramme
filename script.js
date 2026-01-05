@@ -668,25 +668,5 @@ dataReady.then(() => {
 	  
 	  draw(false, true);
 	});
-	
-	
-	
-	// Changer la couleur du select selon le groupe choisi
-	document.getElementById('persoGroupe').addEventListener('change', function() {
-	  const groupeColors = {
-		'Kumo': '#ccaf4a',
-	    'Ariestiens': '#6ac889',
-	    'Terriens': '#C21108',
-	    'Gardiens': '#F08C00',
-	    'Elus': '#289DDC',
-	    'Damnés': '#8956E8'
-	  };
-	  
-	  this.style.color = groupeColors[this.value] || '#a79c99';
-	});
-	
-	document.addEventListener('contextmenu', function(e) {
-	    e.preventDefault();  // Empêche l'ouverture du menu contextuel
-	});
-	
+		
 });
