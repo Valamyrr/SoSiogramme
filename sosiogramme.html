@@ -837,7 +837,7 @@ function csvToJson(csv) {
   const lines = csv.trim().split("\n");
   const headers = lines.shift().split(";");
   return lines.map((line, index) => {
-    const values = line.split(",");
+    const values = line.split(";");
     const obj = { id: index + 1 };
     headers.forEach((h, i) => {
       obj[h.trim()] = values[i]?.trim();
