@@ -74,8 +74,8 @@ async function loadCsv(url) {
 
 async function bootstrapData() {
   const [persos, rels] = await Promise.all([
-    loadCsv("https://valamyrr.github.io/sosiogramme/personnages.csv"),
-    //loadCsv("https://valamyrr.github.io/sosiogramme/relations.csv")
+    loadCsv("https://valamyrr.github.io/SoSiogramme/personnages.csv"),
+    //loadCsv("https://valamyrr.github.io/SoSiogramme/relations.csv")
   ]);
 
   nomsPersos = persos;
