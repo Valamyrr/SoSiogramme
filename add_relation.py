@@ -20,6 +20,6 @@ relation = extract("Relation")
 direction = extract("Direction")
 
 with open(CSV_PATH,"a", encoding="utf-8") as f:
-    f.write(f'\n{nom},{nom2},{relation},{direction}')
+    f.write(f'\n{nom};{nom2};{relation};{direction}')
 
 print(f"Ligne ajoutée : {nom}, {nom2}, {relation}, {direction}")
