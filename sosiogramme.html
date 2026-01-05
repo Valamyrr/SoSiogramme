@@ -847,20 +847,21 @@ function csvToJson(csv) {
   });
 }
 
-fetch("https://valamyrr.github.io/SoSiogramme/personnages.csv")
-  .then(res => res.text())
-  .then(csv => {
-    const data = csvToJson(csv);
-    nomsPersos = data;
-  });
-console.log(nomsPersos)
+async function loadPersonnages() {
+  const res = await fetch("https://valamyrr.github.io/SoSiogramme/personnages.csv");
+  const csv = await res.text();
+  nomsPersos = csvToJson(csv);
+  console.log("async",nomsPerso);
+}
+loadPersonnages()
+console.log("afterAsync",nomsPersos)
 
 const personnages = nomsPersos.map(p => ({
   ...p,
   x: Math.random() * width,
   y: Math.random() * height
 }));
-console.log(personnages)
+console.log("positions",personnages)
 
 const relations = [
   //{ source: "perso10", cible: "perso12", typeAversB: "divorcés", typeBversA: "fratrie" }
