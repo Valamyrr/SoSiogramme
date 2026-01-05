@@ -1,7 +1,7 @@
 name: Ajouter un personnage au CSV
 on:
   issues:
-    types: [labeled]
+    types: [opened,labeled]
 
 permissions:
   contents: write
