@@ -84,11 +84,17 @@ async function loadCsv(url) {
 
 async function bootstrapData() {
   const [persos, rels] = await Promise.all([
-    loadCsv("https://valamyrr.github.io/SoSiogramme/personnages.csv"),
+    //loadCsv("https://valamyrr.github.io/SoSiogramme/personnages.csv"),
     //loadCsv("https://valamyrr.github.io/SoSiogramme/relations.csv")
   ]);
 
-  nomsPersos = persos
+  nomsPersos = [{ id: "perso9", nom: "Alesund", image: "https://i.ibb.co/MkmYb6kg/alesund.png", groupe: "Ariestiens" },
+  { id: "perso10", nom: "Auren", image: "https://i.ibb.co/tMczNccW/auren.png", groupe: "Ariestiens" },
+  { id: "perso11", nom: "Basile", image: "https://i.ibb.co/F4sgCrHq/basile.png", groupe: "Gardiens" },
+  { id: "perso12", nom: "Boréal", image: "https://i.ibb.co/b5fMLQcy/boreal.png", groupe: "Ariestiens" },
+  { id: "perso13", nom: "Chrysanthème", image: "https://i.ibb.co/0RZHynWx/chrysantheme.png", groupe: "Elus" },
+  { id: "perso14", nom: "Cobalt", image: "https://i.ibb.co/gbjBpjGV/cobalt.png", groupe: "Elus" },
+  { id: "perso15", nom: "Cyan", image: "https://i.ibb.co/GvTjX9nr/cyan.png", groupe: "Ariestiens" }]
   relations = [];
 
   resolveDataReady();
