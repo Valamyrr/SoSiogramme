@@ -850,7 +850,6 @@ fetch("https://valamyrr.github.io/SoSiogramme/personnages.csv")
   .then(res => res.text())
   .then(csv => {
     const data = csvToJson(csv);
-    console.log(data);
     nomsPersos = data;
   });
 
@@ -860,6 +859,7 @@ const personnages = nomsPersos.map(p => ({
   x: Math.random() * width,
   y: Math.random() * height
 }));
+console.log(personnages)
 
 const relations = [
   //{ source: "perso10", cible: "perso12", typeAversB: "divorcés", typeBversA: "fratrie" }
