@@ -28,3 +28,10 @@ jobs:
         with:
           title: "Ajout personnage #${{ github.event.issue.number }}"
           branch: ajout-personnage-${{ github.event.issue.number }}
+          
+      - name: Merge PR automatiquement
+        uses: peter-evans/merge-pull-request@v3
+        with:
+          pull-request: ${{ steps.create_pr.outputs.pull-request-number }}
+          merge-method: merge
+          commit-message: "Merge automatique ajout personnage"
