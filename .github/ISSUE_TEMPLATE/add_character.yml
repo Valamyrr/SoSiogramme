@@ -7,7 +7,7 @@ body:
     id: nom
     attributes:
       label: Nom
-      placeholder: ex: Naruto
+      placeholder: Uzumaki Naruto
     validations:
       required: true
 
@@ -15,7 +15,7 @@ body:
     id: avatar
     attributes:
       label: Avatar
-      placeholder: ex: https://xxx
+      placeholder: https://xxx
     validations:
       required: true
 
@@ -23,7 +23,7 @@ body:
     id: groupe
     attributes:
       label: Groupe
-      placeholder: ex: Kumo
+      placeholder: Kumo
     validations:
       required: true
       
@@ -31,6 +31,6 @@ body:
     id: personnage_type
     attributes:
       label: Type
-      placeholder: ex: PJ
+      placeholder: PJ
     validations:
       required: true
