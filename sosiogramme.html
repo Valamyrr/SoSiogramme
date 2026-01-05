@@ -851,7 +851,7 @@ async function loadPersonnages() {
   const res = await fetch("https://valamyrr.github.io/SoSiogramme/personnages.csv");
   const csv = await res.text();
   nomsPersos = csvToJson(csv);
-  console.log("async",nomsPerso);
+  console.log("async",nomsPersos);
 }
 loadPersonnages()
 console.log("afterAsync",nomsPersos)
