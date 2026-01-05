@@ -22,7 +22,7 @@ ptype = extract("Type")
 print([nom,avatar,groupe,ptype])
 
 with open(CSV_PATH,"a", encoding="utf-8") as f:
-    f.write(f'\n{nom},{avatar},{groupe},{ptype}')
+    f.write(f'\n{nom};{avatar};{groupe};{ptype}')
 
 print(f"Ligne ajoutée : {nom}, {avatar}, {groupe}, {ptype}")
 
