@@ -853,6 +853,9 @@ fetch("https://valamyrr.github.io/SoSiogramme/personnages.csv")
     nomsPersos = data;
   });
 
+nomsPersos= [{ id: "perso9", nom: "Alesund", image: "https://i.ibb.co/MkmYb6kg/alesund.png", groupe: "Ariestiens" },
+  { id: "perso10", nom: "Auren", image: "https://i.ibb.co/tMczNccW/auren.png", groupe: "Ariestiens" },
+  { id: "perso11", nom: "Basile", image: "https://i.ibb.co/F4sgCrHq/basile.png", groupe: "Gardiens" }]
 
 const personnages = nomsPersos.map(p => ({
   ...p,
