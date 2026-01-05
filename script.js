@@ -67,6 +67,7 @@ function csvToJson(csv) {
 }
 
 async function loadCsv(url) {
+  console.log("load CSV : ",url)
   const res = await fetch(url);
   const csv = await res.text();
   return csvToJson(csv);
