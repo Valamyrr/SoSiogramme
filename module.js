@@ -6,11 +6,10 @@ let width = grapheContainer.clientWidth;
 let height = grapheContainer.clientHeight;
 
 const groupes = {
-  Ariestiens: "#6AC889",
-  Terriens: "#C21108",
-  Gardiens: "#F08C00",
-  Elus: "#289DDC",
-  Damnés: "#8956E8"
+  Kumo: "#ccaf4a",
+  Homura: "#689465",
+  Kiri: "#6685a0",
+  Errants: "#85231a"
 };
 
 const relationsColors = {
