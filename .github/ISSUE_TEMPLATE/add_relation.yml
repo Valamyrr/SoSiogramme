@@ -23,14 +23,23 @@ body:
     id: relation
     attributes:
       label: Relation
-      placeholder: Rivalité
+      options:
+        - Amitié
+        - Amour
+        - Rivalité
+        - Jalousie
+        - Haine
+        - Peur
     validations:
       required: true
       
   - type: input
-    id: axe
+    id: direction
     attributes:
-      label: Axe
-      placeholder: x/>/<
+      label: Direction
+      options:
+        - >
+        - x
+        - <
     validations:
       required: true
