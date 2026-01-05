@@ -26,5 +26,5 @@ jobs:
       - name: Créer PR
         uses: peter-evans/create-pull-request@v5
         with:
-          title: "Ajout personnage #${{ github.event.issue.number }}"
-          branch: ajout-personnage-${{ github.event.issue.number }}
+          title: "Ajout relation #${{ github.event.issue.number }}"
+          branch: ajout-relation-${{ github.event.issue.number }}
