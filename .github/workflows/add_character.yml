@@ -10,7 +10,6 @@ permissions:
 jobs:
   add-character:
     if: |
-      contains(github.event.issue.labels.*.name, 'ok') &&
       contains(github.event.issue.labels.*.name, 'personnage')
     
     runs-on: ubuntu-latest
