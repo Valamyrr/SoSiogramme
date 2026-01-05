@@ -192,24 +192,22 @@ html, body {
 }
     
     
-                input[type="checkbox"][data-group="Ariestiens"]:checked {
-  background: #6ac889;
+                input[type="checkbox"][data-group="Kumo"]:checked {
+  background: #ccaf4a;
+}
+
+        input[type="checkbox"][data-group="Kiri"]:checked {
+  background: #6685a0;
 }
     
-        input[type="checkbox"][data-group="Terriens"]:checked {
-  background: #C21108;
+        input[type="checkbox"][data-group="Homura"]:checked {
+  background: #689465;
 }
     
-        input[type="checkbox"][data-group="Gardiens"]:checked {
-  background: #F08C00;
+            input[type="checkbox"][data-group="Errants"]:checked {
+  background: #85231a;
 }
     
-            input[type="checkbox"][data-group="Elus"]:checked {
-  background: #289DDC;
-}
-    
-            input[type="checkbox"][data-group="Damnés"]:checked {
-  background: #8956E8;
 }
     
     .sidebar-section #searchName p{
@@ -530,34 +528,28 @@ transition: 0.3s;
 }
 
 /* Couleurs pour les options de groupes */
-#persoGroupe option[value="Ariestiens"] {
-  color: #6ac889;
+#persoGroupe option[value="Kumo"] {
+  color: #ccaf4a;
   font-weight: bold;
 }
 
-#persoGroupe option[value="Terriens"] {
-  color: #C21108;
+#persoGroupe option[value="Homura"] {
+  color: #689465;
   font-weight: bold;
 }
 
-#persoGroupe option[value="Gardiens"] {
-  color: #F08C00;
+#persoGroupe option[value="Kiri"] {
+  color: #6685a0;
   font-weight: bold;
 }
 
-#persoGroupe option[value="Elus"] {
-  color: #289DDC;
+#persoGroupe option[value="Errants"] {
+  color: #85231a;
   font-weight: bold;
 }
-
-#persoGroupe option[value="Damnés"] {
-  color: #8956E8;
-  font-weight: bold;
-}
-   
     
     
-             #codePerso::-webkit-scrollbar{
+ #codePerso::-webkit-scrollbar{
   height: 4px;
   }
   #codePerso::-webkit-scrollbar-thumb{
