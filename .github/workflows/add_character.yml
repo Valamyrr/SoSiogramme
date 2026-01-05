@@ -1,0 +1,26 @@
+name: Ajouter un personnage au CSV
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  add-character:
+    if: |
+      contains(github.event.issue.labels.*.name, 'approved') &&
+      contains(github.event.issue.labels.*.name, 'ajout-personnage')
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Ajouter personnage au CSV
+        run: python scripts/add_personnage.py
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+
+      - name: Créer PR
+        uses: peter-evans/create-pull-request@v5
+        with:
+          title: "Ajout personnage #${{ github.event.issue.number }}"
+          branch: ajout-personnage-${{ github.event.issue.number }}
