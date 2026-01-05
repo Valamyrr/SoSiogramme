@@ -846,7 +846,7 @@ function csvToJson(csv) {
   });
 }
 
-fetch("https://raw.githubusercontent.com/Valamyrr/SoSiogramme/main/personnages.csv")
+fetch("https://valamyrr.github.io/SoSiogramme/personnages.csv")
   .then(res => res.text())
   .then(csv => {
     const data = csvToJson(csv);
