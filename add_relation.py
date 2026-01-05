@@ -19,8 +19,6 @@ nom2 = extract("Nom2")
 relation = extract("Relation")
 direction = extract("Direction")
 
-print([nom,nom2,relation,axe])
-
 with open(CSV_PATH,"a", encoding="utf-8") as f:
     f.write(f'\n{nom},{nom2},{relation},{direction}')
 
