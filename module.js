@@ -641,23 +641,6 @@ toggleGroupesBtn.addEventListener("click", () => {
   draw(false, true);
 });
 
-
-// Désactiver la touche F12 (console de développement)
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'F12') {
-        e.preventDefault();  // Empêche l'ouverture de la console
-        alert('Si des choses dans le code vous intéresse, demandez-nous... On ne gatekeep pas !!! C\'est toujours plus sympa que de fouiller dans notre dos (on sait que vous pouvez y accéder mais bon c\'est toujours chouette de croire en l\'humain qui va juste venir demander gentillement ce qui l\'intéresse)');
-    }
-});
-
-// Désactiver Ctrl+Shift+I, qui ouvre aussi la console
-document.addEventListener('keydown', function(e) {
-    if ((e.ctrlKey && e.shiftKey && e.key === 'I') || (e.ctrlKey && e.key === 'U')) {
-        e.preventDefault();
-        alert('Si des choses dans le code vous intéresse, demandez-nous... On ne gatekeep pas !!! C\'est toujours plus sympa que de fouiller dans notre dos (on sait que vous pouvez y accéder mais bon c\'est toujours chouette de croire en l\'humain qui va juste venir demander gentillement ce qui l\'intéresse)');
-    }
-});
-
 // ===== SYSTÈME D'AJOUT DE PERSONNAGE =====
 
 const modal = document.getElementById('addPersoModal');
@@ -999,35 +982,4 @@ function copyCode(elementId) {
   });
 }
 
-// Changer la couleur du select selon le groupe choisi
-document.getElementById('persoGroupe').addEventListener('change', function() {
-  const groupeColors = {
-    'Ariestiens': '#6ac889',
-    'Terriens': '#C21108',
-    'Gardiens': '#F08C00',
-    'Elus': '#289DDC',
-    'Damnés': '#8956E8'
-  };
-  
-  this.style.color = groupeColors[this.value] || '#a79c99';
-});
 
-document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();  // Empêche l'ouverture du menu contextuel
-});
-
-// Désactiver la touche F12 (console de développement)
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'F12') {
-        e.preventDefault();  // Empêche l'ouverture de la console
-        alert('Si des choses dans le code vous intéresse, demandez-nous... On ne gatekeep pas !!! C\'est toujours plus sympa que de fouiller dans notre dos (on sait que vous pouvez y accéder mais bon c\'est toujours chouette de croire en l\'humain qui va juste venir demander gentillement ce qui l\'intéresse)');
-    }
-});
-
-// Désactiver Ctrl+Shift+I, qui ouvre aussi la console
-document.addEventListener('keydown', function(e) {
-    if ((e.ctrlKey && e.shiftKey && e.key === 'I') || (e.ctrlKey && e.key === 'U')) {
-        e.preventDefault();
-        alert('Si des choses dans le code vous intéresse, demandez-nous... On ne gatekeep pas !!! C\'est toujours plus sympa que de fouiller dans notre dos (on sait que vous pouvez y accéder mais bon c\'est toujours chouette de croire en l\'humain qui va juste venir demander gentillement ce qui l\'intéresse)');
-    }
-});
