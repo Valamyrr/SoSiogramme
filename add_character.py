@@ -3,7 +3,7 @@ import re
 
 
 FILE = os.path.dirname(__file__)
-CSV_PATH = os.path.join(FILE,'../../personnages.py')
+CSV_PATH = os.path.join(FILE,'../personnages.py')
 
 body = os.environ["ISSUE_BODY"]
 
