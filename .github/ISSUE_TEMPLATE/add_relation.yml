@@ -19,7 +19,7 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: dropdown
     id: relation
     attributes:
       label: Relation
@@ -33,7 +33,7 @@ body:
     validations:
       required: true
       
-  - type: input
+  - type: dropdown
     id: direction
     attributes:
       label: Direction
