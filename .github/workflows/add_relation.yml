@@ -1,4 +1,4 @@
-name: Ajouter un personnage au CSV
+name: Ajouter une relation au CSV
 on:
   issues:
     types: [opened,labeled]
