@@ -6,8 +6,8 @@ on:
 jobs:
   add-character:
     if: |
-      contains(github.event.issue.labels.*.name, 'approved') &&
-      contains(github.event.issue.labels.*.name, 'ajout-personnage')
+      contains(github.event.issue.labels.*.name, 'ok') &&
+      contains(github.event.issue.labels.*.name, 'personnage')
     
     runs-on: ubuntu-latest
     
