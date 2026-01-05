@@ -1,6 +1,6 @@
 name: Ajouter une relation
 description: Ajouter une ligne Nom + Nom2 + Relation + Axe
-title: "[Ajouter] Personnage"
+title: "[Ajouter] Relation : xxx"
 labels: ["ajout","relation"]
 body:
   - type: input
