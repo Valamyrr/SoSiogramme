@@ -7,6 +7,8 @@ CSV_PATH = os.path.join(FILE,'../personnages.py')
 
 body = os.environ["ISSUE_BODY"]
 
+print(body)
+
 def extract(field):
     pattern = rf"{field}\n(.+)"
     match = re.search(pattern, body)
