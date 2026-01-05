@@ -1,0 +1,36 @@
+name: Ajouter un personnage
+description: Ajouter une ligne Nom + Avatar + Groupe + Type (PJ/PNJ)
+title: "[Ajouter] Personnage"
+labels: ["ajout"]
+body:
+  - type: input
+    id: nom
+    attributes:
+      label: Nom
+      placeholder: ex: Uzumaki Naruto
+    validations:
+      required: true
+
+  - type: input
+    id: avatar
+    attributes:
+      label: Avatar
+      placeholder: ex: https://xxx
+    validations:
+      required: true
+
+  - type: input
+    id: groupe
+    attributes:
+      label: Groupe
+      placeholder: ex: Kumo
+    validations:
+      required: true
+      
+  - type: input
+    id: type
+    attributes:
+      label: Type
+      placeholder: ex: PJ
+    validations:
+      required: true
