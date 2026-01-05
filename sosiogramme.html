@@ -853,6 +853,7 @@ fetch("https://valamyrr.github.io/SoSiogramme/personnages.csv")
     const data = csvToJson(csv);
     nomsPersos = data;
   });
+console.log(nomsPersos)
 
 const personnages = nomsPersos.map(p => ({
   ...p,
