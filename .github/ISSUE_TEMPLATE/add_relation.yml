@@ -1,0 +1,36 @@
+name: Ajouter une relation
+description: Ajouter une ligne Nom + Nom2 + Relation + Axe
+title: "[Ajouter] Personnage"
+labels: ["ajout","relation"]
+body:
+  - type: input
+    id: nom
+    attributes:
+      label: Nom
+      placeholder: Uzumaki Naruto
+    validations:
+      required: true
+
+  - type: input
+    id: nom2
+    attributes:
+      label: Nom2
+      placeholder: Uchiha Sasuke
+    validations:
+      required: true
+
+  - type: input
+    id: relation
+    attributes:
+      label: Relation
+      placeholder: Rivalité
+    validations:
+      required: true
+      
+  - type: input
+    id: axe
+    attributes:
+      label: Axe
+      placeholder: x/>/<
+    validations:
+      required: true
