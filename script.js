@@ -53,6 +53,15 @@ const relationsLabels = {
   divorcés: "ex - divorcés",
 };
 
+let selectedPersonnages = new Set();
+let zoom = 1;
+let draggingNode = null;
+let panX = 0;
+let panY = 0;
+let isPanning = false;
+let panStartX = 0;
+let panStartY = 0;
+
 function csvToJson(csv) {
   const lines = csv.trim().split("\n");
   const headers = lines.shift().split(";");
@@ -545,16 +554,7 @@ dataReady.then(() => {
 	  y: Math.random() * height
 	}));
 	console.log(personnages)
-		
-	let selectedPersonnages = new Set();
-	let zoom = 1;
-	let draggingNode = null;
-	let panX = 0;
-	let panY = 0;
-	let isPanning = false;
-	let panStartX = 0;
-	let panStartY = 0;
-			
+					
 	document.getElementById("resetBtn").addEventListener("click", () => {
 	  selectedPersonnages.clear();
 	  document.getElementById("searchName").value = "";
