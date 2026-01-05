@@ -7,7 +7,7 @@ body:
     id: nom
     attributes:
       label: Nom
-      placeholder: ex: Uzumaki Naruto
+      placeholder: ex: Naruto
     validations:
       required: true
 
