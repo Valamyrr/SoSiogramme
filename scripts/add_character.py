@@ -1,11 +1,9 @@
-from pathlib import Path
 import os
 import re
 
-ROOT = Path(__file__).resolve().parent
-print(ROOT)
-CSV_PATH = ROOT / "personnages.csv"
-print(CSV_PATH)
+
+FILE = os.path.dirname(__file__)
+CSV_PATH = os.path.join(FILE,'../personnages.py')
 
 body = os.environ["ISSUE_BODY"]
 
