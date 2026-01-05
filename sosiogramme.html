@@ -847,14 +847,10 @@ function csvToJson(csv) {
   });
 }
 
-async function loadPersonnages() {
-  const res = await fetch("https://valamyrr.github.io/SoSiogramme/personnages.csv");
-  const csv = await res.text();
-  nomsPersos = csvToJson(csv);
-  console.log("async",nomsPersos);
-}
-loadPersonnages()
-console.log("afterAsync",nomsPersos)
+const res = await fetch("https://valamyrr.github.io/SoSiogramme/personnages.csv");
+const csv = await res.text();
+nomsPersos = csvToJson(csv);
+console.log("async",nomsPersos);
 
 const personnages = nomsPersos.map(p => ({
   ...p,
