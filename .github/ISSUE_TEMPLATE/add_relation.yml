@@ -38,8 +38,8 @@ body:
     attributes:
       label: Direction
       options:
-        - >
-        - x
-        - <
+        - ">"
+        - "x"
+        - "<"
     validations:
       required: true
