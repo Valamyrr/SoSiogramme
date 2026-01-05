@@ -21,12 +21,7 @@ ptype = extract("Type")
 
 print([nom,avatar,groupe,ptype])
 
-header = ["nom","avatar","groupe","type"]
-if not CSV_PATH.exists():
-    with CSV_PATH.open("w", encoding="utf-8") as f:
-        f.write(",".join(header) + "\n")
-
-with CSV_PATH.open("a", encoding="utf-8") as f:
+with open("CSV_PATH","a", encoding="utf-8") as f:
     f.write(f'{nom},{avatar},{groupe},{ptype}\n')
 
 print(f"Ligne ajoutée : {nom}, {avatar}, {groupe}, {ptype}")
