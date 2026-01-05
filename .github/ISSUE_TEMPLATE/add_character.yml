@@ -1,7 +1,7 @@
 name: Ajouter un personnage
 description: Ajouter une ligne Nom + Avatar + Groupe + Type (PJ/PNJ)
 title: "[Ajouter] Personnage"
-labels: ["ajout"]
+labels: ["ajout","personnage"]
 body:
   - type: input
     id: nom
