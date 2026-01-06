@@ -25,6 +25,11 @@ const relationsColors = {
   peur: "#BDF948",
   jalousie: "#FFB4DF"
 };
+
+const relationsLabels = {
+  affection: "Affection",
+  jalousie: "Jalousie"
+};
   
 function getRelationLabel(type) {
   return relationsLabels[type] || type;
