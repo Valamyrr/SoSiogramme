@@ -259,6 +259,7 @@ function draw(isDragging = false, skipForces = false) {
         if (r.source === match.name) filteredIds.add(r.cible);
         if (r.cible === match.name) filteredIds.add(r.source);
       });
+	  console.log(filteredIds)
     }
 	console.log("recherche",match)
   }
