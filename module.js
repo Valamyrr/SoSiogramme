@@ -428,17 +428,17 @@ function draw(isDragging = false, skipForces = false) {
   // Dessiner les personnages
   personnages.forEach(p => {
     if (!activeGroups.includes(p.groupe)) return;
-    if (search && !filteredIds.has(p.id)) return;
+    if (search && !filteredIds.has(p.nom)) return;
 
     const g = document.createElementNS(NS, "g");
-    g.setAttribute("class", selectedPersonnages.has(p.id) ? "node selected" : "node");
+    g.setAttribute("class", selectedPersonnages.has(p.nom) ? "node selected" : "node");
     g.setAttribute("transform", `translate(${p.x},${p.y})`);
 
     const circle = document.createElementNS(NS, "circle");
     circle.setAttribute("r", 35);
     circle.setAttribute("fill", "#fff");
     circle.setAttribute("stroke", groupes[p.groupe] || "#666");
-    circle.setAttribute("stroke-width", selectedPersonnages.has(p.id) ? 10 : 8);
+    circle.setAttribute("stroke-width", selectedPersonnages.has(p.nom) ? 10 : 8);
     g.appendChild(circle);
 
     const img = document.createElementNS(NS, "image");
@@ -521,10 +521,10 @@ function draw(isDragging = false, skipForces = false) {
         svg.style.cursor = "grab";
         
         if (!hasMoved) {
-          if (selectedPersonnages.has(p.id)) {
-            selectedPersonnages.delete(p.id);
+          if (selectedPersonnages.has(p.nom)) {
+            selectedPersonnages.delete(p.nom);
           } else {
-            selectedPersonnages.add(p.id);
+            selectedPersonnages.add(p.nom);
           }
           draw(false, true);
         }
@@ -555,7 +555,7 @@ document.getElementById("searchName").addEventListener("input", () => {
     // Trouver tous les personnages qui correspondent à la recherche
     personnages.forEach(p => {
       if (p.nom.toLowerCase().includes(search)) {
-        selectedPersonnages.add(p.id);
+        selectedPersonnages.add(p.nom);
       }
     });
   }
