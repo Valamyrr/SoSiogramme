@@ -187,6 +187,7 @@ function applyCollisions(skipDragging = false) {
       if (skipDragging && draggingNode && (a === draggingNode || b === draggingNode)) {
         // Si le nœud draggé EST sélectionné, on applique quand même les collisions
         if (!selectedPersonnages.has(draggingNode.name)) {
+		  console.log("don't apply collisions")
           continue;
         }
       }
