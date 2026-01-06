@@ -14,12 +14,12 @@ def extract(field):
     if not match:
         raise ValueError(f"Champ manquant : {field}")
     return match.group(1).strip()
-nom = extract("Nom")
-nom2 = extract("Nom2")
-relation = extract("Relation")
-direction = extract("Direction")
+nom = extract("Perso 1")
+nom2 = extract("Perso 2")
+relation1 = extract("Perso 1 > Perso 2")
+relation2 = extract("Perso 2 > Perso 1")
 
 with open(CSV_PATH,"a", encoding="utf-8") as f:
-    f.write(f'\n{nom};{nom2};{relation};{direction}')
+    f.write(f'\n{nom};{nom2};{relation1};{relation2}')
 
-print(f"Ligne ajoutée : {nom}, {nom2}, {relation}, {direction}")
+print(f"Ligne ajoutée : {nom}, {nom2}, {relation1}, {relation2}")
