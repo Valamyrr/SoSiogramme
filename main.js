@@ -3,6 +3,8 @@ const grapheContainer = document.getElementById("graphe-container");
 const NS = "http://www.w3.org/2000/svg";
 
 const WORLD_SIZE = 10000;
+const WORLD_BOUNDS = 20000;
+
 let width = grapheContainer.clientWidth;
 let height = grapheContainer.clientHeight;
 
@@ -42,10 +44,10 @@ const relationsLabels = {
 };
 
 let viewBox = {
-  x: -width / 2,
-  y: -height / 2,
-  w: width,
-  h: height
+  x: -WORLD_BOUNDS / 2,
+  y: -WORLD_BOUNDS / 2,
+  w: WORLD_BOUNDS,
+  h: WORLD_BOUNDS
 };
 function updateViewBox() {
   svg.setAttribute(
@@ -54,6 +56,7 @@ function updateViewBox() {
   );
 }
 updateViewBox();
+
 function screenToWorld(svg, clientX, clientY) {
   const pt = svg.createSVGPoint();
   pt.x = clientX;
@@ -610,22 +613,28 @@ svg.addEventListener("wheel", e => {
   e.preventDefault();
 
   const scale = e.deltaY < 0 ? 0.9 : 1.1;
-  const rect = svg.getBoundingClientRect();
-  const mx = e.clientX - rect.left;
-  const my = e.clientY - rect.top;
 
+  const mx = e.offsetX;
+  const my = e.offsetY;
 
   const wx = viewBox.x + (mx / width) * viewBox.w;
   const wy = viewBox.y + (my / height) * viewBox.h;
 
-  viewBox.w *= scale;
-  viewBox.h *= scale;
+  const newW = viewBox.w * scale;
+  const newH = viewBox.h * scale;
+
+  // ❗ autorise l’augmentation du viewBox
+  if (newW > WORLD_BOUNDS || newH > WORLD_BOUNDS) return;
+
+  viewBox.w = newW;
+  viewBox.h = newH;
 
   viewBox.x = wx - (mx / width) * viewBox.w;
   viewBox.y = wy - (my / height) * viewBox.h;
 
   updateViewBox();
 }, { passive: false });
+
 
 
 // Gestion du pan (déplacement du fond)
