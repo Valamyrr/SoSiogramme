@@ -1,12 +1,12 @@
 name: Ajouter une relation
-description: Ajouter une ligne Nom + Nom2 + Relation + Axe
+description: Ajouter une flèche ou double-flèche entre deux personnages
 title: "[Ajouter] Relation : xxx"
 labels: ["ajout","relation"]
 body:
   - type: input
-    id: nom
+    id: nom1
     attributes:
-      label: Nom
+      label: Perso 1
       placeholder: Uzumaki Naruto
     validations:
       required: true
@@ -14,32 +14,45 @@ body:
   - type: input
     id: nom2
     attributes:
-      label: Nom2
+      label: Perso 2
       placeholder: Uchiha Sasuke
     validations:
       required: true
 
   - type: dropdown
-    id: relation
+    id: typeBversA
     attributes:
-      label: Relation
+      label: Perso 1 > Perso 2
       options:
+        - Affection
         - Amitié
-        - Amour
+        - Compliqué
+        - Famile
+        - Maître
+        - Elève
+        - Hostilité
+        - Respect
         - Rivalité
         - Jalousie
-        - Haine
         - Peur
     validations:
       required: true
       
   - type: dropdown
-    id: direction
+    id: typeBversA
     attributes:
-      label: Direction
+      label: Perso 2 > Perso 1
       options:
-        - ">"
-        - "x"
-        - "<"
+        - Affection
+        - Amitié
+        - Compliqué
+        - Famile
+        - Maître
+        - Elève
+        - Hostilité
+        - Respect
+        - Rivalité
+        - Jalousie
+        - Peur
     validations:
       required: true
