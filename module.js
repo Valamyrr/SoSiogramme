@@ -258,6 +258,7 @@ function draw(isDragging = false, skipForces = false) {
         if (r.cible === match.name) filteredIds.add(r.source);
       });
     }
+	console.log("recherche",match)
   }
 
   // Dessiner les relations UNIQUEMENT si des personnages sont sélectionnés
