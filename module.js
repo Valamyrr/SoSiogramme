@@ -65,7 +65,6 @@ xhr.send(null);
 if (xhr.status === 200) {
   const csvText = xhr.responseText;
   nomsPersos = csvToJson(csvText)
-  console.log(nomsPersos);
 }else{
   console.error("cannot fetch characters data")
 }
@@ -76,7 +75,6 @@ xhr.send(null);
 if (xhr.status === 200) {
   const csvText = xhr.responseText;
   relations = csvToJson(csvText)
-  console.log(relations);
 }else{
   console.error("cannot fetch relations data")
 }
@@ -90,8 +88,8 @@ const personnages = nomsPersos.map(p => ({
 let selectedPersonnages = new Set();
 let zoom = 1;
 let draggingNode = null;
-let panX = 0;
-let panY = 0;
+let panX = -width/2;
+let panY = -width/2;
 let isPanning = false;
 let panStartX = 0;
 let panStartY = 0;
@@ -187,11 +185,9 @@ function applyCollisions(skipDragging = false) {
       if (skipDragging && draggingNode && (a === draggingNode || b === draggingNode)) {
         // Si le nœud draggé EST sélectionné, on applique quand même les collisions
         if (!selectedPersonnages.has(draggingNode.nom)) {
-		  console.log("don't apply collisions")
           continue;
         }
       }
-	  console.log("apply collisions")
       
       const dx = b.x - a.x;
       const dy = b.y - a.y;
@@ -596,25 +592,6 @@ svg.addEventListener("wheel", e => {
   panY = mouseY - (mouseY - panY) * (zoom / oldZoom);
   draw();
 });
-/*svg.addEventListener("wheel", e => {
-  e.preventDefault();
-  const zoomFactor = 1.1;
-  const rect = svg.getBoundingClientRect();
-  const mx = e.clientX - rect.left;
-  const my = e.clientY - rect.top;
-  const dx = mx / rect.width;
-  const dy = my / rect.height;
-  const zoom = e.deltaY < 0 ? 1 / zoomFactor : zoomFactor;
-  viewBox.x += viewBox.w * dx * (1 - zoom);
-  viewBox.y += viewBox.h * dy * (1 - zoom);
-  viewBox.w *= zoom;
-  viewBox.h *= zoom;
-  svg.setAttribute(
-    "viewBox",
-    `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`
-  );
-});*/
-
 
 // Gestion du pan (déplacement du fond)
 svg.addEventListener("mousedown", e => {
