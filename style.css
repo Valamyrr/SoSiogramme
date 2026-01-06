@@ -217,7 +217,7 @@ outline: none;
 }
 
     .node-name-bg.pnj{
-  fill: rgba(75, 75, 75, 0.5);  /* ← Couleur du fond */
+  fill: rgba(105, 105, 105, 0.5);  /* ← Couleur du fond */
 }
     
     .node text {
