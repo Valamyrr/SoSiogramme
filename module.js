@@ -584,22 +584,39 @@ document.querySelectorAll(".sidebar input[type='checkbox']").forEach(cb =>
   cb.addEventListener("change", () => draw(false, true))
 );
 
-svg.addEventListener("wheel", e => {
+//Zoom svg
+/*svg.addEventListener("wheel", e => {
   e.preventDefault();
   const zoomAmount = e.deltaY * -0.001;
   const oldZoom = zoom;
   zoom = Math.min(Math.max(0.5, zoom + zoomAmount), 3);
-  
-  // Ajuster le pan pour zoomer vers le centre de la souris
   const rect = svg.getBoundingClientRect();
   const mouseX = e.clientX - rect.left;
   const mouseY = e.clientY - rect.top;
-  
   panX = mouseX - (mouseX - panX) * (zoom / oldZoom);
   panY = mouseY - (mouseY - panY) * (zoom / oldZoom);
-  
   draw();
+});*/
+//Viewbow zoom
+svg.addEventListener("wheel", e => {
+  e.preventDefault();
+  const zoomFactor = 1.1;
+  const rect = svg.getBoundingClientRect();
+  const mx = e.clientX - rect.left;
+  const my = e.clientY - rect.top;
+  const dx = mx / rect.width;
+  const dy = my / rect.height;
+  const zoom = e.deltaY < 0 ? 1 / zoomFactor : zoomFactor;
+  viewBox.x += viewBox.w * dx * (1 - zoom);
+  viewBox.y += viewBox.h * dy * (1 - zoom);
+  viewBox.w *= zoom;
+  viewBox.h *= zoom;
+  svg.setAttribute(
+    "viewBox",
+    `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`
+  );
 });
+
 
 // Gestion du pan (déplacement du fond)
 svg.addEventListener("mousedown", e => {
