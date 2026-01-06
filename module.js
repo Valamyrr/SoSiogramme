@@ -245,6 +245,7 @@ function draw(isDragging = false, skipForces = false) {
   const show = Array.from(document.querySelectorAll('.sidebar input[data-type]:checked')).map(c => c.dataset.type);
   const activeGroups = Array.from(document.querySelectorAll('.sidebar input[data-group]:checked')).map(c => c.dataset.group);
   const showNPCs = document.querySelectorAll('.sidebar #toggle-pnjs:checked').length>0
+  const showPlayers = document.querySelectorAll('.sidebar #toggle-pjs:checked').length>0
   const search = document.getElementById("searchName").value.toLowerCase();
 
   let filteredIds = new Set();
@@ -272,6 +273,9 @@ function draw(isDragging = false, skipForces = false) {
       if (search && (!filteredIds.has(rel.source) || !filteredIds.has(rel.cible))) return;
 	  if (a.type == "PNJ" || b.type == "PNJ"){
 		  if(!showNPCs) return;
+	  }
+	  if (a.type == "PJ" || b.type == "PJ"){
+		  if(!showPlayers) return;
 	  }
 
       const showAtoB = show.includes(rel.typeAversB);
@@ -433,7 +437,8 @@ function draw(isDragging = false, skipForces = false) {
     if (!activeGroups.includes(p.groupe)) return;
     if (search && !filteredIds.has(p.nom)) return;
 	if (p.type == "PNJ" && !showNPCs) return;
-
+	if (p.type == "PJ" && !showPlayers) return;
+	  
     const g = document.createElementNS(NS, "g");
     g.setAttribute("class", selectedPersonnages.has(p.nom) ? "node selected" : "node");
     g.setAttribute("transform", `translate(${p.x},${p.y})`);
