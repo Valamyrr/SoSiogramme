@@ -254,7 +254,7 @@ function draw(isDragging = false, skipForces = false) {
   let matches = new Set();
   if (search) {
     matches = personnages.filter(p => p.nom.toLowerCase().includes(search));
-    if (match) {
+    if (matches) {
 	  matches.forEach(match =>{
 	      filteredIds.add(match.nom);
 	      relations.forEach(r => {
