@@ -647,8 +647,8 @@ window.addEventListener("mousemove", e => {
   const dx = e.clientX - lastPan.x;
   const dy = e.clientY - lastPan.y;
 
-  viewBox.x -= dx * (viewBox.w / WORLD_SIZE);
-  viewBox.y -= dy * (viewBox.h / WORLD_SIZE);
+  viewBox.x -= dx * (viewBox.w);
+  viewBox.y -= dy * (viewBox.h);
 
   lastPan.x = e.clientX;
   lastPan.y = e.clientY;
