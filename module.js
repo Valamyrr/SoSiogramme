@@ -71,7 +71,7 @@ if (xhr.status === 200) {
   console.error("cannot fetch characters data")
 }
 
-let xhr = new XMLHttpRequest();
+xhr = new XMLHttpRequest();
 xhr.open('GET', 'https://valamyrr.github.io/SoSiogramme/relations.csv', false);
 xhr.send(null);
 if (xhr.status === 200) {
