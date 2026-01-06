@@ -202,12 +202,12 @@ function applyCollisions(skipDragging = false) {
         const moveY = (dy / dist) * overlap * 0.5;
         
         // Si a est sélectionné mais pas b, seul b bouge
-        if (selectedPersonnages.has(a.id) && !selectedPersonnages.has(b.id)) {
+        if (selectedPersonnages.has(a.nom) && !selectedPersonnages.has(b.nom)) {
           b.x += moveX * 2;
           b.y += moveY * 2;
         }
         // Si b est sélectionné mais pas a, seul a bouge
-        else if (selectedPersonnages.has(b.id) && !selectedPersonnages.has(a.id)) {
+        else if (selectedPersonnages.has(b.nom) && !selectedPersonnages.has(a.nom)) {
           a.x -= moveX * 2;
           a.y -= moveY * 2;
         }
