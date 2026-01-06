@@ -19,18 +19,24 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: dropdown
     id: groupe
     attributes:
       label: Groupe
-      placeholder: Kumo
+      options:
+        - Homura
+        - Kiri
+        - Kumo
+        - Errants
     validations:
       required: true
       
-  - type: input
+  - type: dropdown
     id: personnage_type
     attributes:
       label: Type
-      placeholder: PJ
+      options:
+        - PJ
+        - PNJ
     validations:
       required: true
