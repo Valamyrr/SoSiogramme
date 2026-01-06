@@ -251,17 +251,18 @@ function draw(isDragging = false, skipForces = false) {
   const search = document.getElementById("searchName").value.toLowerCase();
 
   let filteredIds = new Set();
+  let matches = new Set();
   if (search) {
-    const match = personnages.find(p => p.nom.toLowerCase().includes(search));
+    const match = personnages.filter(p => p.nom.toLowerCase().includes(search));
     if (match) {
-      filteredIds.add(match.nom);
-      relations.forEach(r => {
-        if (r.source === match.nom) filteredIds.add(r.cible);
-        if (r.cible === match.nom) filteredIds.add(r.source);
-      });
-	  console.log(filteredIds)
+	  matches.forEach(match =>{
+	      filteredIds.add(match.nom);
+	      relations.forEach(r => {
+	        if (r.source === match.nom) filteredIds.add(r.cible);
+	        if (r.cible === match.nom) filteredIds.add(r.source);
+	      });
+	  }
     }
-	console.log("recherche",match)
   }
 
   // Dessiner les relations UNIQUEMENT si des personnages sont sélectionnés
