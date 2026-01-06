@@ -28,6 +28,15 @@ const relationsColors = {
 
 const relationsLabels = {
   affection: "Affection",
+  amitié: "Amitié",
+  compliqué: "Compliqué",
+  famille: "Famille",
+  maître: "Maître",
+  élève: "Elève",
+  hostilité: "Hostilité",
+  respect: "Respect",
+  rivalité: "Rivalité",
+  peur: "Peur",
   jalousie: "Jalousie"
 };
   
