@@ -648,11 +648,4 @@ toggleGroupesBtn.addEventListener("click", () => {
   draw(false, true);
 });
 
-// Fermer les résultats si on clique ailleurs
-document.addEventListener('click', (e) => {
-  if (!updateModal.contains(e.target)) {
-    updatePersoResults.style.display = 'none';
-  }
-});
-
 
