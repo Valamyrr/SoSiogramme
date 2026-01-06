@@ -13,34 +13,19 @@ const groupes = {
 };
 
 const relationsColors = {
-  alliance: "#256DFA",
-  enfance: "#FFE14A",
-  amour: "#E92746",
+  affection: "#FF8DE3",
   amitié: "#FFD100",
   compliqué: "#FF854E",
-  divorcés: "#A3ADB8",
   famille: "#5BCC5D",
-  guidance: "#66FFF2",
+  maître: "#66FFF2",
+  élève: "#66FFF2",
   hostilité: "#A91B1B",
-  mépris: "#8999AC",
-  obsession: "#7D8FFF",
+  respect: "#8FFF5A",
   rivalité: "#FF6F3C",
-  servilité: "#B6A893",
-  trahison: "#BDF948",
-  affection: "#FF8DE3",
-  oublié: "#8956E8",
-  tolère: "#FFB4DF",
-  respecte: "#8FFF5A",
-  fratrie: "#F08C00",
+  peur: "#BDF948",
+  jalousie: "#FFB4DF"
 };
   
-const relationsLabels = {
-  fratrie: "fratrie gardienne",
-  enfance: "amis d'enfance",
-  guidance: "mentor - disciple",
-  divorcés: "ex - divorcés",
-};
-
 function getRelationLabel(type) {
   return relationsLabels[type] || type;
 }
