@@ -20,7 +20,7 @@ body:
       required: true
 
   - type: dropdown
-    id: typeBversA
+    id: typeAversB
     attributes:
       label: Perso 1 > Perso 2
       options:
