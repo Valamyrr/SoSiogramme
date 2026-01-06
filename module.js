@@ -253,7 +253,7 @@ function draw(isDragging = false, skipForces = false) {
   let filteredIds = new Set();
   let matches = new Set();
   if (search) {
-    const match = personnages.filter(p => p.nom.toLowerCase().includes(search));
+    matches = personnages.filter(p => p.nom.toLowerCase().includes(search));
     if (match) {
 	  matches.forEach(match =>{
 	      filteredIds.add(match.nom);
