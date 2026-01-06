@@ -215,6 +215,10 @@ outline: none;
     .node-name-bg {
   fill: rgba(0, 0, 0, 0.5);  /* ← Couleur du fond */
 }
+
+    .node-name-bg.pnj{
+  fill: rgba(75, 75, 75, 0.5);  /* ← Couleur du fond */
+}
     
     .node text {
       font-size: 14px;
