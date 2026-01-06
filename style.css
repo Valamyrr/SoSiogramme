@@ -114,93 +114,53 @@ html, body {
     .sidebar-section input[type="checkbox"]:checked {
     background-color: #C21108;
 }
-    
-    input[type="checkbox"][data-type="alliance"]:checked {
-  background: #256DFA;
-}
-    
-        input[type="checkbox"][data-type="enfance"]:checked {
-  background: #FFE14A;
-}
-    
-        input[type="checkbox"][data-type="amour"]:checked {
-  background: #E92746;
-}
-    
-        input[type="checkbox"][data-type="amitié"]:checked {
-  background: #FFD100;
-}
-    
-        input[type="checkbox"][data-type="compliqué"]:checked {
-  background: #FF854E;
-}
-    
-        input[type="checkbox"][data-type="divorcés"]:checked {
-  background: #A3ADB8;
-}
-    
-        input[type="checkbox"][data-type="famille"]:checked {
-  background: #5BCC5D;
-}
-    
-        input[type="checkbox"][data-type="guidance"]:checked {
-  background: #66FFF2;
-}
-    
-        input[type="checkbox"][data-type="hostilité"]:checked {
-  background: #A91B1B;
-}
-    
-        input[type="checkbox"][data-type="mépris"]:checked {
-  background: #8999AC;
-}
-    
-        input[type="checkbox"][data-type="obsession"]:checked {
-  background: #7D8FFF;
-}
-    
-            input[type="checkbox"][data-type="rivalité"]:checked {
-  background: #FF6F3C;
-}
-    
-        input[type="checkbox"][data-type="servilité"]:checked {
-  background: #B6A893;
-}
-    
-        input[type="checkbox"][data-type="trahison"]:checked {
-  background: #BDF948;
-}
-    
-            input[type="checkbox"][data-type="affection"]:checked {
+
+input[type="checkbox"][data-type="affection"]:checked {
   background: #FF8DE3;
 }
-    
-        input[type="checkbox"][data-type="oublié"]:checked {
-  background: #8956E8;
+input[type="checkbox"][data-type="amitié"]:checked {
+  background: #FFD100;
 }
-    
-        input[type="checkbox"][data-type="tolère"]:checked {
+input[type="checkbox"][data-type="compliqué"]:checked {
+  background: #FF854E;
+}
+input[type="checkbox"][data-type="famille"]:checked {
+  background: #5BCC5D;
+}
+input[type="checkbox"][data-type="maître"]:checked {
+  background: #66FFF2;
+}
+input[type="checkbox"][data-type="élève"]:checked {
+  background: #66FFF2;
+}   
+input[type="checkbox"][data-type="hostilité"]:checked {
+  background: #A91B1B;
+}
+input[type="checkbox"][data-type="respect"]:checked {
+  background: #8FFF5A;
+}
+input[type="checkbox"][data-type="rivalité"]:checked {
+  background: #FF6F3C;
+}
+input[type="checkbox"][data-type="peur"]:checked {
+  background: #BDF948;
+}
+input[type="checkbox"][data-type="jalousie"]:checked {
   background: #FFB4DF;
 }
     
-            input[type="checkbox"][data-type="respecte"]:checked {
-  background: #8FFF5A;
-}
+
     
-    
-                input[type="checkbox"][data-group="Kumo"]:checked {
+input[type="checkbox"][data-group="Kumo"]:checked {
   background: #ccaf4a;
 }
-
-        input[type="checkbox"][data-group="Kiri"]:checked {
+input[type="checkbox"][data-group="Kiri"]:checked {
   background: #6685a0;
 }
-    
-        input[type="checkbox"][data-group="Homura"]:checked {
+input[type="checkbox"][data-group="Homura"]:checked {
   background: #689465;
 }
-    
-            input[type="checkbox"][data-group="Errants"]:checked {
+input[type="checkbox"][data-group="Errants"]:checked {
   background: #85231a;
 }
     
