@@ -7,7 +7,7 @@ body:
     id: nom1
     attributes:
       label: Perso 1
-      placeholder: Uzumaki Naruto
+      placeholder: Naruto
     validations:
       required: true
 
@@ -15,7 +15,7 @@ body:
     id: nom2
     attributes:
       label: Perso 2
-      placeholder: Uchiha Sasuke
+      placeholder: Sasuke
     validations:
       required: true
 
