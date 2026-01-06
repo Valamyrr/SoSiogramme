@@ -441,6 +441,7 @@ function draw(isDragging = false, skipForces = false) {
     img.setAttribute("width", 70);
     img.setAttribute("height", 70);
     img.setAttribute("class", "node-image");
+	img.setAttribute("preserveAspectRatio","xMidYMin slice");
     g.appendChild(img);
 
     // Mesurer le texte pour créer le background
