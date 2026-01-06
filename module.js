@@ -261,7 +261,7 @@ function draw(isDragging = false, skipForces = false) {
 	        if (r.source === match.nom) filteredIds.add(r.cible);
 	        if (r.cible === match.nom) filteredIds.add(r.source);
 	      });
-	  }
+	  });
     }
   }
 
