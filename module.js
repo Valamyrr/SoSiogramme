@@ -2,8 +2,8 @@ const svg = document.getElementById("graphe");
 const grapheContainer = document.getElementById("graphe-container");
 const NS = "http://www.w3.org/2000/svg";
 
-let width = grapheContainer.clientWidth;
-let height = grapheContainer.clientHeight;
+let width = grapheContainer.clientWidth*10;
+let height = grapheContainer.clientHeight*10;
 
 const groupes = {
   Kumo: "#ccaf4a",
@@ -39,14 +39,6 @@ const relationsLabels = {
   peur: "Peur",
   jalousie: "Jalousie"
 };
-
-var viewBox = {
-  x: -500,
-  y: -500,
-  w: 1000,
-  h: 1000
-};
-
 
 function getRelationLabel(type) {
   return relationsLabels[type] || type;
@@ -592,8 +584,7 @@ document.querySelectorAll(".sidebar input[type='checkbox']").forEach(cb =>
   cb.addEventListener("change", () => draw(false, true))
 );
 
-//Zoom svg
-/*svg.addEventListener("wheel", e => {
+svg.addEventListener("wheel", e => {
   e.preventDefault();
   const zoomAmount = e.deltaY * -0.001;
   const oldZoom = zoom;
@@ -604,9 +595,8 @@ document.querySelectorAll(".sidebar input[type='checkbox']").forEach(cb =>
   panX = mouseX - (mouseX - panX) * (zoom / oldZoom);
   panY = mouseY - (mouseY - panY) * (zoom / oldZoom);
   draw();
-});*/
-//Viewbow zoom
-svg.addEventListener("wheel", e => {
+});
+/*svg.addEventListener("wheel", e => {
   e.preventDefault();
   const zoomFactor = 1.1;
   const rect = svg.getBoundingClientRect();
@@ -623,7 +613,7 @@ svg.addEventListener("wheel", e => {
     "viewBox",
     `${viewBox.x} ${viewBox.y} ${viewBox.w} ${viewBox.h}`
   );
-});
+});*/
 
 
 // Gestion du pan (déplacement du fond)
@@ -652,8 +642,8 @@ window.addEventListener("mouseup", () => {
 });
 
 window.addEventListener("resize", () => {
-  width = grapheContainer.clientWidth;
-  height = grapheContainer.clientHeight;
+  width = grapheContainer.clientWidth*10;
+  height = grapheContainer.clientHeigh*10;
 });
 
 draw();
