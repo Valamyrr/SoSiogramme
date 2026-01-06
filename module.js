@@ -190,6 +190,7 @@ function applyCollisions(skipDragging = false) {
           continue;
         }
       }
+	  console.log("apply collisions")
       
       const dx = b.x - a.x;
       const dy = b.y - a.y;
