@@ -142,8 +142,8 @@ function applyLinkForces(isDragging = false) {
   
   const strength = isDragging ? 0.15 : 0.01;
   relations.forEach(({ source, cible }) => {
-    const a = personnages.find(p => p.id === source);
-    const b = personnages.find(p => p.id === cible);
+    const a = personnages.find(p => p.nom === source);
+    const b = personnages.find(p => p.nom === cible);
     if (!a || !b) return;
     
     // Si on est en train de drag, appliquer la force seulement si un des deux est le node draggé
@@ -265,8 +265,8 @@ function draw(isDragging = false, skipForces = false) {
       const isRelated = selectedPersonnages.has(rel.source) || selectedPersonnages.has(rel.cible);
       if (!isRelated) return;
 
-      const a = personnages.find(p => p.id === rel.source);
-      const b = personnages.find(p => p.id === rel.cible);
+      const a = personnages.find(p => p.nom === rel.source);
+      const b = personnages.find(p => p.nom === rel.cible);
       if (!a || !b) return;
       if (!activeGroups.includes(a.groupe) || !activeGroups.includes(b.groupe)) return;
       if (search && (!filteredIds.has(rel.source) || !filteredIds.has(rel.cible))) return;
