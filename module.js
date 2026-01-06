@@ -270,7 +270,7 @@ function draw(isDragging = false, skipForces = false) {
       if (!a || !b) return;
       if (!activeGroups.includes(a.groupe) || !activeGroups.includes(b.groupe)) return;
       if (search && (!filteredIds.has(rel.source) || !filteredIds.has(rel.cible))) return;
-	  if (a.type == "PNJ" || b.type == "PNJ){
+	  if (a.type == "PNJ" || b.type == "PNJ"){
 		  if(!showNPCs) return;
 	  }
 
