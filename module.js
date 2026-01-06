@@ -2,8 +2,8 @@ const svg = document.getElementById("graphe");
 const grapheContainer = document.getElementById("graphe-container");
 const NS = "http://www.w3.org/2000/svg";
 
-let width = grapheContainer.clientWidth;
-let height = grapheContainer.clientHeight;
+let width = grapheContainer.clientWidth*3;
+let height = grapheContainer.clientHeight*3;
 
 const groupes = {
   Kumo: "#ccaf4a",
@@ -642,8 +642,8 @@ window.addEventListener("mouseup", () => {
 });
 
 window.addEventListener("resize", () => {
-  width = grapheContainer.clientWidth;
-  height = grapheContainer.clientHeigh;
+  width = grapheContainer.clientWidth*3;
+  height = grapheContainer.clientHeight*3;
 });
 
 draw();
