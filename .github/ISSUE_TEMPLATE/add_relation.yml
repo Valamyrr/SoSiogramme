@@ -24,17 +24,17 @@ body:
     attributes:
       label: Perso 1 > Perso 2
       options:
-        - Affection
-        - Amitié
-        - Compliqué
-        - Famile
-        - Maître
-        - Elève
-        - Hostilité
-        - Respect
-        - Rivalité
-        - Jalousie
-        - Peur
+        - affection
+        - amitié
+        - compliqué
+        - famile
+        - maître
+        - élève
+        - hostilité
+        - respect
+        - rivalité
+        - jalousie
+        - peur
     validations:
       required: true
       
@@ -43,16 +43,16 @@ body:
     attributes:
       label: Perso 2 > Perso 1
       options:
-        - Affection
-        - Amitié
-        - Compliqué
-        - Famile
-        - Maître
-        - Elève
-        - Hostilité
-        - Respect
-        - Rivalité
-        - Jalousie
-        - Peur
+        - affection
+        - amitié
+        - compliqué
+        - famile
+        - maître
+        - élève
+        - hostilité
+        - respect
+        - rivalité
+        - jalousie
+        - peur
     validations:
       required: true
