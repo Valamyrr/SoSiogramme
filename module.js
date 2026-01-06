@@ -472,6 +472,9 @@ function draw(isDragging = false, skipForces = false) {
     bgRect.setAttribute("rx", borderRadius);
     bgRect.setAttribute("ry", borderRadius);
     bgRect.setAttribute("class", "node-name-bg");
+	if(p.type=="PNJ"){
+		 bgRect.setAttribute("class","node-name-bg pnj");
+	}
     g.appendChild(bgRect);
 
     const text = document.createElementNS(NS, "text");
