@@ -1,5 +1,5 @@
 name: Ajouter un personnage
-description: Ajouter une ligne Nom + Avatar + Groupe + Type (PJ/PNJ)
+description: Ajouter un jeton personnage au graphe
 title: "[Ajouter] Personnage"
 labels: ["ajout","personnage"]
 body:
