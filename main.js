@@ -2,11 +2,7 @@ const svg = document.getElementById("graphe");
 const grapheContainer = document.getElementById("graphe-container");
 const NS = "http://www.w3.org/2000/svg";
 
-const WORLD_SIZE = 10000;
-const WORLD_BOUNDS = 20000;
-
-let width = grapheContainer.clientWidth;
-let height = grapheContainer.clientHeight;
+const WORLD_SIZE = 5000;
 
 const groupes = {
   Kumo: "#ccaf4a",
@@ -44,10 +40,10 @@ const relationsLabels = {
 };
 
 let viewBox = {
-  x: -WORLD_BOUNDS / 2,
-  y: -WORLD_BOUNDS / 2,
-  w: WORLD_BOUNDS,
-  h: WORLD_BOUNDS
+  x: -WORLD_SIZE / 2,
+  y: -WORLD_SIZE / 2,
+  w: WORLD_SIZE,
+  h: WORLD_SIZE
 };
 function updateViewBox() {
   svg.setAttribute(
@@ -252,8 +248,8 @@ function applyCollisions(skipDragging = false) {
   
   personnages.forEach(p => {
     const margin = 80;
-    p.x = Math.max(margin, Math.min(width - margin, p.x));
-    p.y = Math.max(margin, Math.min(height - margin, p.y));
+    p.x = Math.max(margin, Math.min(WORLD_SIZE - margin, p.x));
+    p.y = Math.max(margin, Math.min(WORLD_SIZE - margin, p.y));
   });
 }
 
@@ -617,20 +613,20 @@ svg.addEventListener("wheel", e => {
   const mx = e.offsetX;
   const my = e.offsetY;
 
-  const wx = viewBox.x + (mx / width) * viewBox.w;
-  const wy = viewBox.y + (my / height) * viewBox.h;
+  const wx = viewBox.x + (mx / WORLD_SIZE) * viewBox.w;
+  const wy = viewBox.y + (my / WORLD_SIZE) * viewBox.h;
 
   const newW = viewBox.w * scale;
   const newH = viewBox.h * scale;
 
   // ❗ autorise l’augmentation du viewBox
-  if (newW > WORLD_BOUNDS || newH > WORLD_BOUNDS) return;
+  if (newW > WORLD_SIZE || newH > WORLD_SIZE) return;
 
   viewBox.w = newW;
   viewBox.h = newH;
 
-  viewBox.x = wx - (mx / width) * viewBox.w;
-  viewBox.y = wy - (my / height) * viewBox.h;
+  viewBox.x = wx - (mx / WORLD_SIZE) * viewBox.w;
+  viewBox.y = wy - (my / WORLD_SIZE) * viewBox.h;
 
   updateViewBox();
 }, { passive: false });
@@ -651,8 +647,8 @@ window.addEventListener("mousemove", e => {
   const dx = e.clientX - lastPan.x;
   const dy = e.clientY - lastPan.y;
 
-  viewBox.x -= dx * (viewBox.w / width);
-  viewBox.y -= dy * (viewBox.h / height);
+  viewBox.x -= dx * (viewBox.w / WORLD_SIZE);
+  viewBox.y -= dy * (viewBox.h / WORLD_SIZE);
 
   lastPan.x = e.clientX;
   lastPan.y = e.clientY;
@@ -662,11 +658,6 @@ window.addEventListener("mousemove", e => {
 
 window.addEventListener("mouseup", () => {
   isPanning = false;
-});
-
-window.addEventListener("resize", () => {
-  width = grapheContainer.clientWidth;
-  height = grapheContainer.clientHeight;
 });
 
 draw();
