@@ -187,10 +187,6 @@ html, body {
   background: #8FFF5A;
 }
     
-            input[type="checkbox"][data-type="fratrie"]:checked {
-  background: #F08C00;
-}
-    
     
                 input[type="checkbox"][data-group="Kumo"]:checked {
   background: #ccaf4a;
