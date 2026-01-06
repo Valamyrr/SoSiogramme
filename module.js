@@ -135,7 +135,7 @@ function createArrowMarkers() {
 
 function applyLinkForces(isDragging = false) {
   // Si on drag un node mais qu'il n'est PAS sélectionné, pas de force de lien
-  if (isDragging && draggingNode && !selectedPersonnages.has(draggingNode.id)) {
+  if (isDragging && draggingNode && !selectedPersonnages.has(draggingNode.name)) {
     return;
   }
   
@@ -186,7 +186,7 @@ function applyCollisions(skipDragging = false) {
       // Skip collision UNIQUEMENT si on drag ET qu'aucun des deux n'est sélectionné
       if (skipDragging && draggingNode && (a === draggingNode || b === draggingNode)) {
         // Si le nœud draggé EST sélectionné, on applique quand même les collisions
-        if (!selectedPersonnages.has(draggingNode.id)) {
+        if (!selectedPersonnages.has(draggingNode.name)) {
           continue;
         }
       }
@@ -252,10 +252,10 @@ function draw(isDragging = false, skipForces = false) {
   if (search) {
     const match = personnages.find(p => p.nom.toLowerCase().includes(search));
     if (match) {
-      filteredIds.add(match.id);
+      filteredIds.add(match.name);
       relations.forEach(r => {
-        if (r.source === match.id) filteredIds.add(r.cible);
-        if (r.cible === match.id) filteredIds.add(r.source);
+        if (r.source === match.name) filteredIds.add(r.cible);
+        if (r.cible === match.name) filteredIds.add(r.source);
       });
     }
   }
