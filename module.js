@@ -58,9 +58,8 @@ function csvToJson(csv) {
   });
 }
 
-let nomsPersos = [
-  
-];
+let nomsPersos = [];
+let relations = [];
 let xhr = new XMLHttpRequest();
 xhr.open('GET', 'https://valamyrr.github.io/SoSiogramme/personnages.csv', false);
 xhr.send(null);
@@ -72,14 +71,22 @@ if (xhr.status === 200) {
   console.error("cannot fetch characters data")
 }
 
+let xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://valamyrr.github.io/SoSiogramme/relations.csv', false);
+xhr.send(null);
+if (xhr.status === 200) {
+  const csvText = xhr.responseText;
+  relations = csvToJson(csvText)
+  console.log(relations);
+}else{
+  console.error("cannot fetch relations data")
+}
+
 const personnages = nomsPersos.map(p => ({
   ...p,
   x: Math.random() * width,
   y: Math.random() * height
 }));
-
-const relations = [
-];
 
 let selectedPersonnages = new Set();
 let zoom = 1;
