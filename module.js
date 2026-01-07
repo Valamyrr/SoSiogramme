@@ -136,10 +136,13 @@ function applyLinkForces(isDragging = false) {
   if (isDragging && draggingNode && !selectedPersonnages.has(draggingNode.nom)) {
     return;
   }
+  if (document.querySelectorAll('.sidebar #toggle-free:checked').length>0) return;
   
   const strength = isDragging ? 0.15 : 0.01;
   relations.forEach(rel => {
-	if (rel.type != document.querySelectorAll('.sidebar #toggle-rhrp:checked').length>0?"hrp":"rp") return;
+	const type = document.querySelectorAll('.sidebar #toggle-rhrp:checked').length>0?"hrp":"rp")
+	  console.log(rel.type != type)
+	if (rel.type != type) return;
 	const source = rel.source
 	const cible = rel.cible
     const a = personnages.find(p => p.nom === source);
