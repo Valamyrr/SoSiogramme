@@ -140,7 +140,7 @@ function applyLinkForces(isDragging = false) {
   
   const strength = isDragging ? 0.15 : 0.01;
   relations.forEach(rel => {
-	const type = document.querySelectorAll('.sidebar #toggle-rhrp:checked').length>0?"hrp":"rp")
+	const type = document.querySelectorAll('.sidebar #toggle-rhrp:checked').length>0?"hrp":"rp"
 	  console.log(rel.type != type)
 	if (rel.type != type) return;
 	const source = rel.source
