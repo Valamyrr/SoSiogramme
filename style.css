@@ -161,40 +161,40 @@ input[type="checkbox"][data-type="jalousie"]:checked {
 
 
 .daltonien-profile input[type="checkbox"][data-type="affection"]:checked {
-  background: #4c9198;
+  background: #699B29;
 }
 .daltonien-profile input[type="checkbox"][data-type="amitié"]:checked {
-  background: #6cbcc6;
+  background: #87CA36;
 }
 .daltonien-profile input[type="checkbox"][data-type="famille"]:checked {
-  background: #8ad6e8;
+  background: #A3E457;
 }
 .daltonien-profile input[type="checkbox"][data-type="respect"]:checked {
-  background: #b1edff;
+  background: #C6F991;
 }
 
 
 .daltonien-profile input[type="checkbox"][data-type="maître"]:checked {
-  background: #741600;
+  background: #7F1C18;
 }
 .daltonien-profile input[type="checkbox"][data-type="élève"]:checked {
-  background: #741600;
+  background: #7F1C18;
 }   
 .daltonien-profile input[type="checkbox"][data-type="rivalité"]:checked {
-  background: #a85240;
+  background: #AE5454;
 }
 .daltonien-profile input[type="checkbox"][data-type="compliqué"]:checked {
-  background: #e3b2c4;
+  background: #CA8181;
 }
 
 .daltonien-profile input[type="checkbox"][data-type="peur"]:checked {
-  background: #1c0024;
+  background: #4B0096;
 }
 .daltonien-profile input[type="checkbox"][data-type="jalousie"]:checked {
-  background: #3c0029;
+  background: #6900BF;
 }
 .daltonien-profile input[type="checkbox"][data-type="hostilité"]:checked {
-  background: #7f6fa6;
+  background: #8A00D7;
 }
     
 
