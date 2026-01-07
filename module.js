@@ -588,6 +588,16 @@ document.getElementById("resetBtn").addEventListener("click", () => {
   draw(false, true);
 });
 
+document.getElementById("showBtn").addEventListener("click", () => {
+  selectedPersonnages.clear();
+  document.getElementById("searchName").value = "";
+  personnages.forEach(p => {
+	  selectedPersonnages.add(p.nom);
+  }
+  draw(false, true);
+});
+
+
 document.getElementById("searchName").addEventListener("input", () => {
   const search = document.getElementById("searchName").value.toLowerCase();
   
