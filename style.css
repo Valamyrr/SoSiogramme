@@ -4,7 +4,7 @@ html, body {
       width: 100%;
       height: 100%;
       overflow: hidden;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Roboto', sans-serif;
     }
 
     body {
@@ -46,14 +46,14 @@ html, body {
       font-size: 16px;
       font-weight: 300;
       color: white;
-      font-family: 'Cinzel';
+      font-family: 'Osake';
     }
 
     .sidebar-section p {
       font-size: 12px;
       line-height: 1.5;
       color: white;
-      font-family: 'Merriweather';
+      font-family: 'Roboto';
       margin: 0;
     }
 
@@ -63,7 +63,7 @@ html, body {
       font-size: 14px;
       border: none;
       box-shadow: 0 0 4px 0px #0d0d0d;
-      font-family: 'Cinzel';
+      font-family: 'Osake';
       padding: 10px 8px 10px 8px;
       color: white;
     }
@@ -72,7 +72,7 @@ html, body {
       display: block;
       margin-bottom: 7px;
       font-size: 12px;
-      font-family: 'Merriweather';
+      font-family: 'Roboto';
       cursor: pointer;
       color: white;
     }
@@ -90,7 +90,7 @@ html, body {
     color: white;
     font-weight: 500;
     font-size: 12px;
-    font-family: 'Merriweather';
+    font-family: 'Roboto';
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 5px;
@@ -102,6 +102,12 @@ html, body {
     .sidebar button:hover {
     color: #bf3131 !important
     }
+
+	.sidebare .cat-separator{
+		height: 1px;
+		background: linear-gradient(-90deg, #75644f 0%, #e1e1e1 80%, white 100%);
+		margin-bottom: 15px;
+	}
 
     #graphe-container {
       flex: 1;
@@ -276,7 +282,7 @@ outline: none;
 }
 
 .relation-header span {
-  font-family: 'Merriweather';
+  font-family: 'Roboto';
   color: #a79c99;
   font-size: 12px;
 }
