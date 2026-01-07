@@ -1,49 +1,45 @@
 source;cible;typeAversB;typeBversA;type
-Katano;Tachibana;jalousie;;rp
-Tachibana;Sawagi;amitié;amitié;rp
+Izumi Katano;Tachibana;jalousie;;rp
+Tachibana;Seijuu Sawagi;amitié;amitié;rp
 Fumeko;Tachibana;respect;;rp
-Aeonya;Hiname;maître;élève;rp
-Aeonya;Kabuki;maître;élève;rp
-Hiname;Katano;respect;respect;rp
-Katano;Fumeko;famille;famille;rp
+Uzumaki Aeonya;Hiname;maître;élève;rp
+Uzumaki Aeonya;Kabuki;maître;élève;rp
+Hiname;Izumi Katano;respect;respect;rp
+Izumi Katano;Fumeko;famille;famille;rp
 Hiname;Kabuki;amitié;amitié;rp
-Shōmei;Rinsei;famille;famille;rp
-Shōmei;Nishibi;famille;famille;rp
-Rinsei;Nishibi;famille;famille;rp
-Uzume;Kanae;famille;famille;rp
-Uzume;Akari;famille;famille;rp
-Uzume;Aeonya;famille;famille;rp
-Kirei;Taiga;maître;élève;rp
-Shānyùe;Mū;respect;;rp
-Mamoru;Yukina;respect;;rp
-Renshu;Kokliko;élève;maître;rp
-Washirō;Ryōzaburō;famille;famille;rp
-Haruko;Retsuko;famille;famille;rp
-Hanabi;Kuma;famille;famille;rp
-Tatsuya;Shiharashi;affection;affection;rp
-Yōichirō;Harushige;maître;élève;rp
-Iwao;Eimei;famille;famille;rp
-Iwao;Aoba;famille;famille;rp
-Iwao;Zento;famille;famille;rp
-Iwao;Aomidoro;famille;famille;rp
-Eimei;Aoba;famille;famille;rp
-Eimei;Zento;famille;famille;rp
-Eimei;Aomidoro;famille;famille;rp
-Aoba;Zento;famille;famille;rp
-Aoba;Aomidoro;famille;famille;rp
-Zento;Aomidoro;famille;famille;rp
-Uzume;Renshu;amitié;;rp
-Uzume;Taiga;amitié;;rp
-Uzume;Zetsumei;peur;;rp
-Hiname;Reijiro;hostilité;;rp
-Hiname;Toshinobu;respect;;rp
-Hiname;Shinri;compliqué;;rp
-Hiname;Renshu;respect;;rp
-Hiname;Hanzo;respect;respect;rp
+Koriki Shōmei;Koriki Rinsei;famille;famille;rp
+Koriki Shōmei;Koriki Nishibi;famille;famille;rp
+Koriki Rinsei;Koriki Nishibi;famille;famille;rp
+Yuki Uzume;Tsubame Kanae;famille;famille;rp
+Yuki Uzume;Yuki Akari;famille;famille;rp
+Yuki Uzume;Uzumaki Aeonya;famille;famille;rp
+Ryoshi Kirei;Zenin Taiga;maître;élève;rp
+Seijuu Shānyùe;Mū;respect;;rp
+Yuki Mamoru;Yuki Yukina;respect;;rp
+Hoshikawa Renshu;Kokliko;élève;maître;rp
+Asakura Washirō;Asakura Ryōzaburō;famille;famille;rp
+Nara Haruko;Nara Retsuko;famille;famille;rp
+Matsurika Hanabi;Matsurika Kuma;famille;famille;rp
+Hyûga Tatsuya;Hyûga Shiharashi;affection;affection;rp
+Funami Yōichirō;Harushige;maître;élève;rp
+Fujiwara Iwao;Hyûga Eimei;famille;famille;rp
+Fujiwara Iwao;Hyûga Aoba;famille;famille;rp
+Fujiwara Iwao;Hyûga Zento;famille;famille;rp
+Fujiwara Iwao;Hyûga Aomidoro;famille;famille;rp
+Hyûga Eimei;Hyûga Aoba;famille;famille;rp
+Hyûga Eimei;Hyûga Zento;famille;famille;rp
+Hyûga Eimei;Hyûga Aomidoro;famille;famille;rp
+Hyûga Aoba;Hyûga Zento;famille;famille;rp
+Hyûga Aoba;Hyûga Aomidoro;famille;famille;rp
+Hyûga Zento;Hyûga Aomidoro;famille;famille;rp
+Yuki Uzume;Hoshikawa Renshu;amitié;;rp
+Yuki Uzume;Zenin Taiga;amitié;;rp
+Yuki Uzume;Kaguya Zetsumei;peur;;rp
+Hiname;Hageshi Reijiro;hostilité;;rp
+Hiname;Nara Toshinobu;respect;;rp
+Hiname;Soragoto Shinri;compliqué;;rp
+Hiname;Hoshikawa Renshu;respect;;rp
+Hiname;Date Hanzo;respect;respect;rp
 Hiname;Tachibana;respect;;rp
-Hanzo;Hayami;respect;;rp
-Hanzo;Yuna;respect;;rp
-Hanzo;Renji;respect;;rp
-Hanzo;Katano;respect;;rp
-Hanzo;Kenshi;respect;;rp
-Hanzo;Shinri;compliqué;;rp
+Date Hanzo;Nobunaka Hayami;respect;;rp
+Date Hanzo;Shirakawa Yuna;respect;;rp
