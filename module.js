@@ -266,7 +266,7 @@ function draw(isDragging = false, skipForces = false) {
   // Dessiner les relations UNIQUEMENT si des personnages sont sélectionnés
   if (selectedPersonnages.size > 0) {
     relations.forEach(rel => {
-	  if (r.type != typeRelation) return
+	  if (rel.type != typeRelation) return
       const isRelated = selectedPersonnages.has(rel.source) || selectedPersonnages.has(rel.cible);
       if (!isRelated) return;
 
