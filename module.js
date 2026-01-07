@@ -243,6 +243,7 @@ function draw(isDragging = false, skipForces = false) {
   const show = Array.from(document.querySelectorAll('.sidebar input[data-type]:checked')).map(c => c.dataset.type);
   const activeGroups = Array.from(document.querySelectorAll('.sidebar input[data-group]:checked')).map(c => c.dataset.group);
   const showNPCs = document.querySelectorAll('.sidebar #toggle-pnjs:checked').length>0
+  const typeRelation = document.querySelectorAll('.sidebar #toggle-rhrp:checked').length>0?"hrp":"rp"
   const showPlayers = document.querySelectorAll('.sidebar #toggle-pjs:checked').length>0
   const search = document.getElementById("searchName").value.toLowerCase();
 
@@ -254,6 +255,7 @@ function draw(isDragging = false, skipForces = false) {
 	  matches.forEach(match =>{
 	      filteredIds.add(match.nom);
 	      relations.forEach(r => {
+			if (r.type != typeRelation) return
 	        if (r.source === match.nom) filteredIds.add(r.cible);
 	        if (r.cible === match.nom) filteredIds.add(r.source);
 	      });
@@ -264,6 +266,7 @@ function draw(isDragging = false, skipForces = false) {
   // Dessiner les relations UNIQUEMENT si des personnages sont sélectionnés
   if (selectedPersonnages.size > 0) {
     relations.forEach(rel => {
+	  if (r.type != typeRelation) return
       const isRelated = selectedPersonnages.has(rel.source) || selectedPersonnages.has(rel.cible);
       if (!isRelated) return;
 
