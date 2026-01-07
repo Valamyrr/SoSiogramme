@@ -18,8 +18,9 @@ nom = extract("Perso 1")
 nom2 = extract("Perso 2")
 relation1 = extract("Perso 1 > Perso 2")
 relation2 = extract("Perso 2 > Perso 1")
+type = extract("Type")
 
 with open(CSV_PATH,"a", encoding="utf-8") as f:
-    f.write(f'\n{nom};{nom2};{relation1};{relation2}')
+    f.write(f'\n{nom};{nom2};{relation1};{relation2};{type}')
 
-print(f"Ligne ajoutée : {nom}, {nom2}, {relation1}, {relation2}")
+print(f"Ligne ajoutée : {nom}, {nom2}, {relation1}, {relation2}, {type}")
