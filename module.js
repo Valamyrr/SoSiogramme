@@ -13,19 +13,19 @@ const groupes = {
 };
 
 const relationsColors = {
-  affection: "#FF8DE3",
-  amitié: "#FFD100",
-  famille: "#5BCC5D",
-  respect: "#8FFF5A",
+  affection: "#648F98",
+  amitié: "#88BAC6",
+  famille: "#A4D2E7",
+  respect: "#C5E9FF",
 	
-  maître: "#66FFF2",
-  élève: "#66FFF2",
-  rivalité: "#FF6F3C",
-  compliqué: "#FF854E",
+  maître: "#661C06",
+  élève: "#661C06",
+  rivalité: "#B6817F",
+  compliqué: "#DAAFC4",
 	
-  peur: "#BDF948",
-  jalousie: "#FFB4DF",
-  hostilité: "#A91B1B"
+  peur: "#1C0024",
+  jalousie: "#683A7A",
+  hostilité: "#360029"
 };
 const relationsColorsDalto = {
   affection: "#699B29",
