@@ -1,7 +1,7 @@
 source;cible;typeAversB;typeBversA;type
-Katano;Tachibana;jalousie;rp
+Katano;Tachibana;jalousie;;rp
 Tachibana;Sawagi;amitié;amitié;rp
-Fumeko;Tachibana;respect;rp
+Fumeko;Tachibana;respect;;rp
 Aeonya;Hiname;maître;élève;rp
 Aeonya;Kabuki;maître;élève;rp
 Hiname;Katano;respect;respect;rp
@@ -14,8 +14,8 @@ Uzume;Kanae;famille;famille;rp
 Uzume;Akari;famille;famille;rp
 Uzume;Aeonya;famille;famille;rp
 Kirei;Taiga;maître;élève;rp
-Shānyùe;Mū;respect;rp
-Mamoru;Yukina;respect;rp
+Shānyùe;Mū;respect;;rp
+Mamoru;Yukina;respect;;rp
 Renshu;Kokliko;élève;maître;rp
 Washirō;Ryōzaburō;famille;famille;rp
 Haruko;Retsuko;famille;famille;rp
