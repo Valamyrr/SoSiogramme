@@ -605,10 +605,10 @@ document.querySelectorAll(".sidebar input[type='checkbox']").forEach(cb =>
   cb.addEventListener("change", () => draw(false, true))
 );
 
-document.getElementById("toggle-daltonien").addEventListener("change",() => 
+document.getElementById("toggle-daltonien").addEventListener("change",() => {
 	document.body.classList.toggle("daltonien-profile");
 	draw(false,true);
-);
+});
 
 svg.addEventListener("wheel", e => {
   e.preventDefault();
