@@ -15,28 +15,32 @@ const groupes = {
 const relationsColors = {
   affection: "#FF8DE3",
   amitié: "#FFD100",
-  compliqué: "#FF854E",
   famille: "#5BCC5D",
+  respect: "#8FFF5A",
+	
   maître: "#66FFF2",
   élève: "#66FFF2",
-  hostilité: "#A91B1B",
-  respect: "#8FFF5A",
   rivalité: "#FF6F3C",
+  compliqué: "#FF854E",
+	
   peur: "#BDF948",
-  jalousie: "#FFB4DF"
+  jalousie: "#FFB4DF",
+  hostilité: "#A91B1B"
 };
 const relationsColorsDalto = {
-  affection: "#4c9198",
-  amitié: "#6cbcc6",
-  compliqué: "#68487a",
-  famille: "#8ad6e8",
-  maître: "#741600",
-  élève: "#741600",
-  hostilité: "#7f6fa6",
+  affection: "#699B29",
+  amitié: "#87CA36",
+  famille: "#A3E457",
   respect: "#b1edff",
-  rivalité: "#e3b2c4",
-  peur: "#1c0024",
-  jalousie: "#3c0029"
+	
+  maître: "#7F1C18",
+  élève: "#7F1C18",
+  rivalité: "#AE5454",
+  compliqué: "#CA8181",
+	
+  peur: "#4B0096",
+  jalousie: "#6900BF",
+  hostilité: "#8A00D7"
 };
 
 const relationsLabels = {
