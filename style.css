@@ -157,6 +157,45 @@ input[type="checkbox"][data-type="peur"]:checked {
 input[type="checkbox"][data-type="jalousie"]:checked {
   background: #FFB4DF;
 }
+
+
+
+.daltonien-profile input[type="checkbox"][data-type="affection"]:checked {
+  background: #4c9198;
+}
+.daltonien-profile input[type="checkbox"][data-type="amitié"]:checked {
+  background: #6cbcc6;
+}
+.daltonien-profile input[type="checkbox"][data-type="famille"]:checked {
+  background: #8ad6e8;
+}
+.daltonien-profile input[type="checkbox"][data-type="respect"]:checked {
+  background: #b1edff;
+}
+
+
+.daltonien-profile input[type="checkbox"][data-type="maître"]:checked {
+  background: #741600;
+}
+.daltonien-profile input[type="checkbox"][data-type="élève"]:checked {
+  background: #741600;
+}   
+.daltonien-profile input[type="checkbox"][data-type="rivalité"]:checked {
+  background: #a85240;
+}
+.daltonien-profile input[type="checkbox"][data-type="compliqué"]:checked {
+  background: #e3b2c4;
+}
+
+.daltonien-profile input[type="checkbox"][data-type="peur"]:checked {
+  background: #1c0024;
+}
+.daltonien-profile input[type="checkbox"][data-type="jalousie"]:checked {
+  background: #3c0029;
+}
+.daltonien-profile input[type="checkbox"][data-type="hostilité"]:checked {
+  background: #7f6fa6;
+}
     
 
     
