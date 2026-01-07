@@ -62,7 +62,7 @@ body:
     attributes:
       label: Type
       options:
-        - RP
-        - HRP
+        - rp
+        - hrp
     validations:
       required: true
