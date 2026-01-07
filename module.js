@@ -138,7 +138,7 @@ function applyLinkForces(isDragging = false) {
   }
   
   const strength = isDragging ? 0.15 : 0.01;
-  relations.forEach((rel => {
+  relations.forEach(rel => {
 	if (rel.type != document.querySelectorAll('.sidebar #toggle-rhrp:checked').length>0?"hrp":"rp") return;
 	const source = rel.source
 	const cible = rel.cible
