@@ -136,7 +136,6 @@ function applyLinkForces(isDragging = false) {
   if (isDragging && draggingNode && !selectedPersonnages.has(draggingNode.nom)) {
     return;
   }
-  if (document.querySelectorAll('.sidebar #toggle-free:checked').length>0) return;
   
   const strength = isDragging ? 0.15 : 0.01;
   relations.forEach(rel => {
@@ -234,7 +233,8 @@ function applyCollisions(skipDragging = false) {
 }
 
 function draw(isDragging = false, skipForces = false) {
-  if (!skipForces) {
+  const freeOrga = document.querySelectorAll('.sidebar #toggle-free:checked').length>0
+  if (!skipForces && !freeOrga) {
     applyLinkForces(isDragging);
     applyCollisions(isDragging);
   }
