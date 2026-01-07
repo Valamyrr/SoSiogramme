@@ -138,7 +138,8 @@ function applyLinkForces(isDragging = false) {
   }
   
   const strength = isDragging ? 0.15 : 0.01;
-  relations.forEach(({ source, cible }) => {
+  relations.forEach(({ type, source, cible }) => {
+	if (type != document.querySelectorAll('.sidebar #toggle-rhrp:checked').length>0?"hrp":"rp") return;
     const a = personnages.find(p => p.nom === source);
     const b = personnages.find(p => p.nom === cible);
     if (!a || !b) return;
