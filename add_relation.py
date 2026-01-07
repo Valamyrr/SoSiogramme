@@ -18,6 +18,8 @@ nom = extract("Perso 1")
 nom2 = extract("Perso 2")
 relation1 = extract("Perso 1 > Perso 2")
 relation2 = extract("Perso 2 > Perso 1")
+if relation2 == "RIEN":
+    relation2 = ""
 type = extract("Type")
 
 with open(CSV_PATH,"a", encoding="utf-8") as f:
