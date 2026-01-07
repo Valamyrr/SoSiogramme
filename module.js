@@ -267,7 +267,7 @@ function draw(isDragging = false, skipForces = false) {
   const search = document.getElementById("searchName").value.toLowerCase();
 	
   const dalto = document.querySelectorAll('.sidebar #toggle-daltonien:checked').length>0
-  const colors = relationsColorsDalto:relationsColors
+  const colors = dalto?relationsColorsDalto:relationsColors
 
   let filteredIds = new Set();
   let matches = new Set();
