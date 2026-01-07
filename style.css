@@ -103,7 +103,7 @@ html, body {
     color: #bf3131 !important
     }
 
-	.sidebare .cat-separator{
+	.sidebar .cat-separator{
 		height: 1px;
 		background: linear-gradient(-90deg, #75644f 0%, #e1e1e1 80%, white 100%);
 		margin-bottom: 15px;
