@@ -125,39 +125,40 @@ html, body {
 }
 
 input[type="checkbox"][data-type="affection"]:checked {
-  background: #FF8DE3;
+  background: #648F98;
 }
 input[type="checkbox"][data-type="amitié"]:checked {
-  background: #FFD100;
-}
-input[type="checkbox"][data-type="compliqué"]:checked {
-  background: #FF854E;
+  background: #88BAC6;
 }
 input[type="checkbox"][data-type="famille"]:checked {
-  background: #5BCC5D;
-}
-input[type="checkbox"][data-type="maître"]:checked {
-  background: #66FFF2;
-}
-input[type="checkbox"][data-type="élève"]:checked {
-  background: #66FFF2;
-}   
-input[type="checkbox"][data-type="hostilité"]:checked {
-  background: #A91B1B;
+  background: #A4D2E7;
 }
 input[type="checkbox"][data-type="respect"]:checked {
-  background: #8FFF5A;
-}
-input[type="checkbox"][data-type="rivalité"]:checked {
-  background: #FF6F3C;
-}
-input[type="checkbox"][data-type="peur"]:checked {
-  background: #BDF948;
-}
-input[type="checkbox"][data-type="jalousie"]:checked {
-  background: #FFB4DF;
+  background: #C5E9FF;
 }
 
+input[type="checkbox"][data-type="maître"]:checked {
+  background: #661C06;
+}
+input[type="checkbox"][data-type="élève"]:checked {
+  background: #661C06;
+}
+input[type="checkbox"][data-type="rivalité"]:checked {
+  background: #B6817F;
+}
+input[type="checkbox"][data-type="compliqué"]:checked {
+  background: #DAAFC4;
+}
+
+input[type="checkbox"][data-type="peur"]:checked {
+  background: #1C0024;
+}
+input[type="checkbox"][data-type="jalousie"]:checked {
+  background: #683A7A;
+}
+input[type="checkbox"][data-type="hostilité"]:checked {
+  background: #360029;
+}
 
 
 .daltonien-profile input[type="checkbox"][data-type="affection"]:checked {
