@@ -25,6 +25,19 @@ const relationsColors = {
   peur: "#BDF948",
   jalousie: "#FFB4DF"
 };
+const relationsColorsDalto = {
+  affection: "#4c9198",
+  amitié: "#6cbcc6",
+  compliqué: "#68487a",
+  famille: "#8ad6e8",
+  maître: "#741600",
+  élève: "#741600",
+  hostilité: "#7f6fa6",
+  respect: "#b1edff",
+  rivalité: "#e3b2c4",
+  peur: "#1c0024",
+  jalousie: "#3c0029"
+};
 
 const relationsLabels = {
   affection: "Affection",
@@ -252,6 +265,9 @@ function draw(isDragging = false, skipForces = false) {
   const typeRelation = document.querySelectorAll('.sidebar #toggle-rhrp:checked').length>0?"hrp":"rp"
   const showPlayers = document.querySelectorAll('.sidebar #toggle-pjs:checked').length>0
   const search = document.getElementById("searchName").value.toLowerCase();
+	
+  const dalto = document.querySelectorAll('.sidebar #toggle-daltonien:checked').length>0
+  const colors = relationsColorsDalto:relationsColors
 
   let filteredIds = new Set();
   let matches = new Set();
@@ -316,7 +332,7 @@ function draw(isDragging = false, skipForces = false) {
         line.setAttribute("y1", y1);
         line.setAttribute("x2", x2);
         line.setAttribute("y2", y2);
-        line.setAttribute("stroke", relationsColors[rel.typeAversB]);
+        line.setAttribute("stroke", colors[rel.typeAversB]);
         line.setAttribute("marker-end", `url(#arrow-${rel.typeAversB})`);
         line.setAttribute("marker-start", `url(#arrow-reverse-${rel.typeAversB})`);
         line.classList.add("link");
@@ -335,7 +351,7 @@ function draw(isDragging = false, skipForces = false) {
         const textLabel = document.createElementNS(NS, "text");
         textLabel.setAttribute("x", midX);
         textLabel.setAttribute("y", midY - 10);
-        textLabel.setAttribute("fill", relationsColors[rel.typeAversB]);
+        textLabel.setAttribute("fill", colors[rel.typeAversB]);
         textLabel.setAttribute("font-size", "11");
         textLabel.setAttribute("font-family", "Merriweather");
         textLabel.setAttribute("text-anchor", "middle");
@@ -359,7 +375,7 @@ function draw(isDragging = false, skipForces = false) {
           line1.setAttribute("y1", y1);
           line1.setAttribute("x2", x2);
           line1.setAttribute("y2", y2);
-          line1.setAttribute("stroke", relationsColors[rel.typeAversB]);
+          line1.setAttribute("stroke", colors[rel.typeAversB]);
           line1.setAttribute("marker-end", `url(#arrow-${rel.typeAversB})`);
           line1.classList.add("link");
           mainGroup.appendChild(line1);
@@ -384,7 +400,7 @@ function draw(isDragging = false, skipForces = false) {
           const textLabel1 = document.createElementNS(NS, "text");
           textLabel1.setAttribute("x", midX1 + textOffsetX);
           textLabel1.setAttribute("y", midY1 + textOffsetY);
-          textLabel1.setAttribute("fill", relationsColors[rel.typeAversB]);
+          textLabel1.setAttribute("fill", colors[rel.typeAversB]);
           textLabel1.setAttribute("font-size", "11");
           textLabel1.setAttribute("font-family", "Merriweather");
           textLabel1.setAttribute("text-anchor", "middle");
@@ -405,7 +421,7 @@ function draw(isDragging = false, skipForces = false) {
           line2.setAttribute("y1", y1);
           line2.setAttribute("x2", x2);
           line2.setAttribute("y2", y2);
-          line2.setAttribute("stroke", relationsColors[rel.typeBversA]);
+          line2.setAttribute("stroke", colors[rel.typeBversA]);
           line2.setAttribute("marker-end", `url(#arrow-${rel.typeBversA})`);
           line2.classList.add("link");
           mainGroup.appendChild(line2);
@@ -429,7 +445,7 @@ function draw(isDragging = false, skipForces = false) {
           const textLabel2 = document.createElementNS(NS, "text");
           textLabel2.setAttribute("x", midX2 + textOffsetX);
           textLabel2.setAttribute("y", midY2 + textOffsetY);
-          textLabel2.setAttribute("fill", relationsColors[rel.typeBversA]);
+          textLabel2.setAttribute("fill", colors[rel.typeBversA]);
           textLabel2.setAttribute("font-size", "11");
           textLabel2.setAttribute("font-family", "Merriweather");
           textLabel2.setAttribute("text-anchor", "middle");
