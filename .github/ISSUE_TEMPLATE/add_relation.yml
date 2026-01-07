@@ -56,3 +56,13 @@ body:
         - peur
     validations:
       required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - RP
+        - HRP
+    validations:
+      required: true
