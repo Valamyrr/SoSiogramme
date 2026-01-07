@@ -88,8 +88,8 @@ const personnages = nomsPersos.map(p => ({
 let selectedPersonnages = new Set();
 let zoom = 1;
 let draggingNode = null;
-let panX = -width/2;
-let panY = -height/2;
+let panX = -width/4;
+let panY = -height/4;
 let isPanning = false;
 let panStartX = 0;
 let panStartY = 0;
