@@ -43,6 +43,7 @@ body:
     attributes:
       label: Perso 2 > Perso 1
       options:
+        - RIEN
         - affection
         - amitié
         - compliqué
