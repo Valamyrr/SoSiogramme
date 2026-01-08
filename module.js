@@ -593,7 +593,7 @@ document.getElementById("showBtn").addEventListener("click", () => {
   document.getElementById("searchName").value = "";
   personnages.forEach(p => {
 	  selectedPersonnages.add(p.nom);
-  }
+  });
   draw(false, true);
 });
 
