@@ -722,7 +722,7 @@ document.getElementById("export").addEventListener("click",()=>{
 
 document.getElementById("import").addEventListener("click",()=>{
 	document.getElementById("importInput").click();
-}
+});
 document.getElementById("importInput").addEventListener("change", (event) => {
   const file = event.target.files[0];
   if (!file) return;
