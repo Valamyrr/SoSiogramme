@@ -739,6 +739,7 @@ document.getElementById("importInput").addEventListener("change", (event) => {
 				}
 			});
 	    });
+		draw(false,true)
     } catch (error) {
       console.error("JSON invalide:",error);
     }
