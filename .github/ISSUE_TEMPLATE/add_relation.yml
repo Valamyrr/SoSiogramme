@@ -35,6 +35,9 @@ body:
         - rivalité
         - jalousie
         - peur
+        - admiration
+        - professionnel
+        - simp pnj (hrp)
     validations:
       required: true
       
@@ -55,6 +58,8 @@ body:
         - rivalité
         - jalousie
         - peur
+        - admiration
+        - professionnel
     validations:
       required: true
 
