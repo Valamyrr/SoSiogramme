@@ -17,6 +17,8 @@ def extract(field):
 nom = extract("Perso 1")
 nom2 = extract("Perso 2")
 relation1 = extract("Perso 1 > Perso 2")
+if relation1 == "simp pnj (hrp)":
+    relation1 = "simp"
 relation2 = extract("Perso 2 > Perso 1")
 if relation2 == "RIEN":
     relation2 = ""
