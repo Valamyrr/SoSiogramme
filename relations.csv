@@ -21,18 +21,18 @@ Hoshikawa Renshu;Kokliko;élève;maître;rp
 Asakura Washirō;Asakura Ryōzaburō;famille;famille;rp
 Nara Haruko;Nara Retsuko;famille;famille;rp
 Matsurika Hanabi;Matsurika Kuma;famille;famille;rp
-Hyûga Tatsuya;Hyûga Shiharashi;affection;affection;rp
+Hyūga Tatsuya;Hyūga Shiharashi;affection;affection;rp
 Funami Yōichirō;Harushige;maître;élève;rp
-Fujiwara Iwao;Hyûga Eimei;famille;famille;rp
-Fujiwara Iwao;Hyûga Aoba;famille;famille;rp
-Fujiwara Iwao;Hyûga Zento;famille;famille;rp
-Fujiwara Iwao;Hyûga Aomidoro;famille;famille;rp
-Hyûga Eimei;Hyûga Aoba;famille;famille;rp
-Hyûga Eimei;Hyûga Zento;famille;famille;rp
-Hyûga Eimei;Hyûga Aomidoro;famille;famille;rp
-Hyûga Aoba;Hyûga Zento;famille;famille;rp
-Hyûga Aoba;Hyûga Aomidoro;famille;famille;rp
-Hyûga Zento;Hyûga Aomidoro;famille;famille;rp
+Fujiwara Iwao;Hyūga Eimei;famille;famille;rp
+Fujiwara Iwao;Hyūga Aoba;famille;famille;rp
+Fujiwara Iwao;Hyūga Zento;famille;famille;rp
+Fujiwara Iwao;Hyūga Aomidoro;famille;famille;rp
+Hyūga Eimei;Hyūga Aoba;famille;famille;rp
+Hyūga Eimei;Hyūga Zento;famille;famille;rp
+Hyūga Eimei;Hyūga Aomidoro;famille;famille;rp
+Hyūga Aoba;Hyūga Zento;famille;famille;rp
+Hyūga Aoba;Hyūga Aomidoro;famille;famille;rp
+Hyūga Zento;Hyūga Aomidoro;famille;famille;rp
 Yuki Uzume;Hoshikawa Renshu;amitié;;rp
 Yuki Uzume;Zenin Taiga;amitié;;rp
 Yuki Uzume;Kaguya Zetsumei;peur;;rp
@@ -55,3 +55,16 @@ Seijuu Sawagi;Shiratsuchi Baku'en;respect;;rp
 Hiname;Amawaka Medaka;hostilité;;rp
 
 Uzumaki Seto;Kawasaki Kaïto;professionnel;;rp
+Uzumaki Seto;Fuwa Yasahiro;hostilité;;rp
+Uzumaki Seto;Kaguya Bankichi;hostilité;;rp
+Uzumaki Seto;Kaguya Zetsumei;professionnel;;rp
+Takahashi Renji;Kensho;amitié;;rp
+Seijuu Shānyùe;Haruko;respect;;rp
+Kaguya Bankichi;Kaguya Taosu;peur;;rp
+Seijuu Shānyùe;Fujiwara Kamui;professionnel;;rp
+Seijuu Shānyùe;Ashikaga Atori;affection;compliqué;rp
+Takahashi Renji;Soragoto Shinri;compliqué;;rp
+Kaguya Bankichi;Kaguya Yusuke;amitié;amitié;rp
+Shimada Hinawa;Funami Yōichirō;respect;;rp
+Zenin Taiga;Cho Takashi;hostilité;;rp
+Uzumaki Seto;Hadō Oboroge;respect;professionnel;rp
