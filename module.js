@@ -710,4 +710,12 @@ toggleGroupesBtn.addEventListener("click", () => {
   draw(false, true);
 });
 
-
+document.getElementById("export").addEventListener("click",()=>{
+	var element = document.createElement('a');
+	element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(personnages, null,4)));
+	element.setAttribute('download', "quest-export.json");
+	element.style.display = 'none';
+	document.body.appendChild(element);
+	element.click();
+	document.body.removeChild(element);
+});
