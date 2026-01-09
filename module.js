@@ -13,34 +13,40 @@ const groupes = {
 };
 
 const relationsColors = {
-  affection: "#648F98",
-  amitié: "#88BAC6",
-  famille: "#A4D2E7",
-  respect: "#C5E9FF",
+  amitié: "#34A477",
+  respect: "#1F6146",
+  admiration: "#F7FF4F",
+  affection: "#DC7AAD",
+  simp : "#CF458D",
 	
-  maître: "#661C06",
-  élève: "#661C06",
-  rivalité: "#B6817F",
-  compliqué: "#DAAFC4",
+  maître: "#3C6EB7",
+  élève: "#53B1EB",
+  professionnel : "#ACBFD7",
+  famille: "#D7EDFB",
 	
-  peur: "#1C0024",
-  jalousie: "#683A7A",
-  hostilité: "#360029"
+  compliqué: "#E1D268",
+  rivalité: "#FFCC80",
+  peur: "#EFA917",
+  jalousie: "#E66A1A",
+  hostilité: "#BB2424"
 };
 const relationsColorsDalto = {
-  affection: "#699B29",
-  amitié: "#87CA36",
-  famille: "#A3E457",
-  respect: "#b1edff",
+  amitié: "#98927A",
+  respect: "#5A5648",
+  admiration: "#FFED54",
+  affection: "#C2C7CF",
+  simp : "#535660",
 	
-  maître: "#7F1C18",
-  élève: "#7F1C18",
-  rivalité: "#AE5454",
-  compliqué: "#CA8181",
+  maître: "#3365B4",
+  élève: "#759BF4",
+  professionnel : "#98A5C9",
+  famille: "#FFFFFF",
 	
-  peur: "#4B0096",
-  jalousie: "#6900BF",
-  hostilité: "#8A00D7"
+  compliqué: "#F1E3A3",
+  rivalité: "#E7CF5F",
+  peur: "#D3BD2C",
+  jalousie: "#A8961F",
+  hostilité: "#27272C"
 };
 
 const relationsLabels = {
@@ -54,7 +60,10 @@ const relationsLabels = {
   respect: "Respect",
   rivalité: "Rivalité",
   peur: "Peur",
-  jalousie: "Jalousie"
+  jalousie: "Jalousie",
+  professionnel: "Professionnel",
+  admiration: "Admiration",
+  simp: "Simp"
 };
 
 function getRelationLabel(type) {
