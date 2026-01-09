@@ -647,7 +647,7 @@ svg.addEventListener("wheel", e => {
 });
 
 // Gestion du pan (déplacement du fond)
-svg.addEventListener("mousedown", e => {
+svg.addEventListener("pointerdown", e => {
   if (e.target === svg || e.target.tagName === 'defs') {
     isPanning = true;
     panStartX = e.clientX - panX;
@@ -656,7 +656,7 @@ svg.addEventListener("mousedown", e => {
   }
 });
 
-window.addEventListener("mousemove", e => {
+window.addEventListener("pointermove", e => {
   if (isPanning) {
     panX = e.clientX - panStartX;
     panY = e.clientY - panStartY;
@@ -664,7 +664,7 @@ window.addEventListener("mousemove", e => {
   }
 });
 
-window.addEventListener("mouseup", () => {
+window.addEventListener("pointerup", () => {
   if (isPanning) {
     isPanning = false;
     svg.style.cursor = "grab";
