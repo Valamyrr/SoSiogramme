@@ -713,9 +713,13 @@ toggleGroupesBtn.addEventListener("click", () => {
 document.getElementById("export").addEventListener("click",()=>{
 	var element = document.createElement('a');
 	element.setAttribute('href', 'data:application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(personnages, null,4)));
-	element.setAttribute('download', "quest-export.json");
+	element.setAttribute('download', "sosiogramme.json");
 	element.style.display = 'none';
 	document.body.appendChild(element);
 	element.click();
 	document.body.removeChild(element);
 });
+
+document.getElementById("import").addEventListener("click",()=>{
+	
+}
