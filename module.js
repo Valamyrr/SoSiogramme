@@ -533,7 +533,7 @@ function draw(isDragging = false, skipForces = false) {
 
     let isDragging = false, hasMoved = false, offsetX = 0, offsetY = 0;
     
-    g.addEventListener("mousedown", e => {
+    g.addEventListener("pointerdown", e => {
       e.stopPropagation();
       e.preventDefault();
       isDragging = true;
@@ -582,8 +582,8 @@ function draw(isDragging = false, skipForces = false) {
       }
     };
 
-    window.addEventListener("mousemove", onMouseMove);
-    window.addEventListener("mouseup", onMouseUp);
+    window.addEventListener("pointermove", onMouseMove);
+    window.addEventListener("pointerup", onMouseUp);
 
     mainGroup.appendChild(g);
   });
