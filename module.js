@@ -14,7 +14,7 @@ const groupes = {
 
 const relationsColors = {
   amitié: "#34A477",
-  respect: "#1F6146",
+  respect: "#2F8166",
   admiration: "#F7FF4F",
   affection: "#DC7AAD",
   simp : "#CF458D",
