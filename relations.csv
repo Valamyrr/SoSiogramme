@@ -7,7 +7,7 @@ Uzumaki Aeonya;Hiname;maître;élève;rp
 Uzumaki Aeonya;Kabuki;maître;élève;rp
 Hiname;Izumi Katano;respect;admiration;rp
 Izumi Katano;Fumeko;famille;famille;rp
-Hiname;Kabuki;amitié;amitié;rp
+Hiname;Kabuki;affection;amitié;rp
 Koriki Shōmei;Koriki Rinsei;famille;famille;rp
 Koriki Shōmei;Koriki Nishibi;famille;famille;rp
 Koriki Rinsei;Koriki Nishibi;famille;famille;rp
@@ -39,7 +39,7 @@ Yuki Uzume;Kaguya Zetsumei;peur;;rp
 Hiname;Hageshi Reijiro;hostilité;;rp
 Hiname;Nara Toshinobu;respect;;rp
 Hiname;Soragoto Shinri;compliqué;;rp
-Hiname;Hoshikawa Renshu;respect;;rp
+Hiname;Hoshikawa Renshu;amitié;respect;rp
 Hiname;Tachibana;respect;;rp
 Date Hanzo;Nobunaka Hayami;respect;;rp
 Date Hanzo;Shirakawa Yūna;respect;;rp
@@ -104,7 +104,6 @@ Seijuu Shānyùe;Uzumaki Aeonya;hostilité;;rp
 Hiname;Takahashi Renji;compliqué;;rp
 Hiname;Yamamoto Nobu;respect;;rp
 Hiname;Tachibana;respect;;rp
-Hiname;Hoshikawa Renshu;amitié;;rp
 Hiname;Keshin;professionnel;;rp
 Hiname;Date Hanzo;amitié;amitié;rp
 Takahashi Renji;Kirisage Hayame;respect;;rp
