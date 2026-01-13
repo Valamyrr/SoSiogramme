@@ -33,7 +33,7 @@ Hyūga Eimei;Hyūga Aomidoro;famille;famille;rp
 Hyūga Aoba;Hyūga Zento;famille;famille;rp
 Hyūga Aoba;Hyūga Aomidoro;famille;famille;rp
 Hyūga Zento;Hyūga Aomidoro;famille;famille;rp
-Yuki Uzume;Hoshikawa Renshu;amitié;;rp
+Yuki Uzume;Hoshikawa Renshu;amitié;amitié;rp
 Yuki Uzume;Zenin Taiga;amitié;amitié;rp
 Yuki Uzume;Kaguya Zetsumei;peur;;rp
 Hiname;Hageshi Reijiro;hostilité;;rp
@@ -42,7 +42,7 @@ Hiname;Soragoto Shinri;compliqué;;rp
 Hiname;Hoshikawa Renshu;amitié;respect;rp
 Hiname;Tachibana;respect;;rp
 Date Hanzo;Nobunaka Hayami;respect;;rp
-Date Hanzo;Shirakawa Yuna;respect;;rp
+Date Hanzo;Shirakawa Yūna;respect;;rp
 Date Hanzo;Takahashi Renji;respect;respect;rp
 Date Hanzo;Izumi Katano;respect;;rp
 Date Hanzo;Keshin;respect;;rp
@@ -67,15 +67,14 @@ Kaguya Bankichi;Hadō Oboroge;peur;;rp
 Kaguya Bankichi;Asakura Washirō;peur;;rp
 Kaguya Bankichi;Funami Yōichirō;respect;;rp
 Kaguya Bankichi;Uzumaki Asami;amitié;;rp
-Kaguya Bankichi;Yuki Uzume;maître;;rp
+Kaguya Bankichi;Yuki Uzume;maître;professionnel;rp
 Kaguya Bankichi;Akimichi Chōsuke;maître;;rp
 Kaguya Bankichi;Yuki Mamoru;amitié;;rp
 Kaguya Bankichi;Ena Shinta;maître;;rp
-Kaguya Bankichi;Hoshikawa Renshu;maître;;rp
+Kaguya Bankichi;Hoshikawa Renshu;maître;respect;rp
 Kaguya Bankichi;Kaguya Zetsumei;famille;;rp
 Kaguya Bankichi;Sakazuki Nahoko;maître;;rp
 Uzumaki Seto;Matsurika Hanabi;amitié;;rp
-Yuki Uzume;Kaguya Bankichi;professionnel;;rp
 Uzumaki Seto;Asakura Washirō;respect;professionnel;rp
 Uzumaki Seto;Gakusha Ashin;respect;;rp
 Uzumaki Seto;Eien no Weihan;respect;;rp
@@ -101,12 +100,11 @@ Uzumaki Seto;Uzumaki Aeonya;respect;;rp
 Uzumaki Seto;Nara Toshinobu;professionnel;;rp
 Yakedo Aruzu;Gaskusha Ashin;amitié;;rp
 Seijuu Shānyùe;Uzumaki Aeonya;hostilité;;rp
-
 Hiname;Takahashi Renji;compliqué;;rp
 Hiname;Yamamoto Nobu;respect;;rp
 Hiname;Tachibana;respect;;rp
 Hiname;Keshin;professionnel;;rp
-Hiname;Date Hanzo;amitié;respect;rp
+Hiname;Date Hanzo;amitié;amitié;rp
 Takahashi Renji;Kirisage Hayame;respect;;rp
 Takahashi Renji;Hageshi Reijiro;respect;;rp
 Zenin Taiga;Nergui;amitié;;rp
@@ -123,5 +121,9 @@ Zenin Taiga;Funami Yoichiro;respect;;rp
 Zenin Taiga;Kaguya Bankichi;professionnel;;rp
 Zenin Taiga;Aburame Wari;amitié;;rp
 Zenin Taiga;Uzumaki Ran;amitié;;rp
-
 Yuki Mamoru;Isoya Akuro;maître;élève;rp
+Hoshikawa Renshu;Ayumi;famille;famille;rp
+Hoshikawa Renshu;Akimichi Chōsuke;professionnel;;rp
+Hoshikawa Renshu;Yuki Mamoru;professionnel;;rp
+Hoshikawa Renshu;Sanzoku Kurai;professionnel;;rp
+Isoya Akuro;Hoshikawa Renshu;amitié;amitié;rp
