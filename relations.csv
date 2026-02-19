@@ -59,7 +59,7 @@ Takahashi Renji;Tachibana;admiration;;rp
 Uzumaki Ran;Seijuu Shānyùe;compliqué;compliqué;rp
 Seijuu Shānyùe;Hiname;affection;;rp
 Khan Kuthulun;Mokuhen Sazanka;respect;;rp
-Khan Kuthulun;Gakusha Ashin;affection;;rp
+Khan Kuthulun;Gakusha Ashin;affection;affection;rp
 Takahashi Renji;Cho Takashi;amitié;;rp
 Funami Yōichirō;Eien no Weihan;respect;;rp
 Seijuu Shānyùe;Koriki Tomio;hostilité;;rp
@@ -78,7 +78,7 @@ Kaguya Bankichi;Kaguya Zetsumei;famille;;rp
 Kaguya Bankichi;Sakazuki Nahoko;maître;;rp
 Uzumaki Seto;Matsurika Hanabi;amitié;;rp
 Uzumaki Seto;Asakura Washirō;respect;professionnel;rp
-Uzumaki Seto;Gakusha Ashin;respect;;rp
+Uzumaki Seto;Gakusha Ashin;respect;admiration;rp
 Uzumaki Seto;Eien no Weihan;respect;;rp
 Uzumaki Seto;Ryokyaku Shinjiro;affection;affection;rp
 Uzumaki Seto;Fujiwara Gen'ichiro;professionnel;;rp
@@ -100,26 +100,30 @@ Khan Kurthulun;Zenin Taiga;affection;;rp
 Khan Kuthulun;Kyojin;admiration;;rp
 Uzumaki Seto;Uzumaki Aeonya;respect;;rp
 Uzumaki Seto;Nara Toshinobu;professionnel;;rp
-Yakedo Aruzu;Gaskusha Ashin;amitié;;rp
+Yakedo Aruzu;Gaskusha Ashin;amitié;affection;rp
 Seijuu Shānyùe;Uzumaki Aeonya;hostilité;;rp
 Hiname;Takahashi Renji;compliqué;;rp
 Hiname;Yamamoto Nobu;respect;;rp
 Hiname;Tachibana;respect;;rp
 Hiname;Keshin;professionnel;;rp
 Hiname;Date Hanzo;amitié;amitié;rp
+Hiname;Aburame Yokoshima;hostilité;;rp
+Hiname;Kensho;professionnel;;rp
+Hiname;Shiratsuchi Baku'en;admiration;;rp
+Hiname;Yuki Zenryō;admiration;;rp
 Takahashi Renji;Kirisage Hayame;respect;;rp
 Takahashi Renji;Hageshi Reijiro;respect;;rp
 Zenin Taiga;Nergui;amitié;;rp
 Zenin Taiga;Hoshikawa Renshu;compliqué;;rp
 Zenin Taiga;Eien no Weihan;respect;;rp
-Zenin Taiga;Hyuga Tatsuya;respect;;rp
+Zenin Taiga;Hyūga Tatsuya;respect;;rp
 Zenin Taiga;Mokuhen Sazanka;respect;;rp
 Zenin Taiga;Kyojin;professionnel;;rp
 Zenin Taiga;Seijuu Suzumi;professionnel;;rp
 Zenin Taiga;Khan Kuthulun;respect;;rp
 Zenin Taiga;Inuzuka Takeshi;professionnel;;rp
 Zenin Taiga;Okamura Amaya;respect;;rp
-Zenin Taiga;Funami Yoichiro;respect;;rp
+Zenin Taiga;Funami Yōichirō;respect;;rp
 Zenin Taiga;Kaguya Bankichi;professionnel;;rp
 Zenin Taiga;Aburame Wari;amitié;;rp
 Zenin Taiga;Uzumaki Ran;amitié;;rp
@@ -129,8 +133,28 @@ Hoshikawa Renshu;Akimichi Chōsuke;professionnel;;rp
 Hoshikawa Renshu;Yuki Mamoru;professionnel;;rp
 Hoshikawa Renshu;Sanzoku Kurai;professionnel;;rp
 Isoya Akuro;Hoshikawa Renshu;amitié;amitié;rp
-Hayami;Shanyue;compliqué;;rp
-Hayami;Kamui;respect;;rp
-Hayami;Hanzo;respect;;rp
-Hayami;Ran;hostilité;;rp
+Hayami;Seijuu Shānyùe;compliqué;;rp
+Hayami;Fujiwara Kamui;respect;;rp
+Hayami;Date Hanzo;respect;;rp
+Hayami;Uzumaki Ran;hostilité;;rp
 Hayami;Tachibana;professionnel;;rp
+Gakusha Ashin;Hiname;affection;affection;rp
+Gakusha Ashin;Fujiwara Gen'ichiro;amitié;;rp
+Gakusha Ashin;Fujiwara Kamui;amitié;;rp
+Gakusha Ashin;Eien no Weihan;amitié;;rp
+Gakusha Ashin;Funami Yōichirō;respect;;rp
+Gakusha Ashin;Kawasaki Kaïto;amitié;;rp
+Gakusha Ashin;Hyūga Shione;respect;;rp
+Gakusha Ashin;Nobu;compliqué;;rp
+Gakusha Ashin;Nara Retsuko;affection;;rp
+Gakusha Ashin;Nara Haruko; respect;;rp
+Gakusha Ashin;Matsurika Hanabi;respect;;rp
+Gakusha Ashin;Kaguya Bankichi;hostilité;;rp
+Gakusha Ashin;Kaguya Zetsumei;hostilité;rp
+Gakusha Ashin;Yuki Mamoru;hostilité;;rp
+Gakusha Ashin;Uzumaki Asami;hostilité;;rp
+Gakusha Ashin;Mokuhen Sazanka;amitié;;rp
+Gakusha Ashin;Fujiwara Iwao;simp;;rp
+Gakusha Ashin;Nara Kuenai;respect;;rp
+Gakusha Ashin;Hyūga Eimei;respect;;rp
+Gakusha Ashin;Hyūga Tatsuya;amitié;;rp
