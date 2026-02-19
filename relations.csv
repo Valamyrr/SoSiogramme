@@ -1,5 +1,5 @@
 source;cible;typeAversB;typeBversA;type
-Izumi Katano;Tachibana;jalousie;;rp
+Izumi Katano;Tachibana;jalousie;professionnel;rp
 Izumi Katano;Soragoto Shinri;professionnel;;rp
 Izumi Katano;Seijuu Sawagi;hostilité;professionnel;rp
 Tachibana;Seijuu Sawagi;amitié;amitié;rp
@@ -55,7 +55,7 @@ Seijuu Sawagi;Uzumaki Aeonya;respect;;rp
 Seijuu Sawagi;Aburame Yokoshima;hostilité;;rp
 Seijuu Sawagi;Shiratsuchi Baku'en;respect;;rp
 Seijuu Shānyùe;Seijuu Sawagi;affection;;rp
-Takahashi Renji;Tachibana;admiration;;rp
+Takahashi Renji;Tachibana;admiration;hostilité;rp
 Uzumaki Ran;Seijuu Shānyùe;compliqué;compliqué;rp
 Seijuu Shānyùe;Hiname;affection;;rp
 Khan Kuthulun;Mokuhen Sazanka;respect;;rp
@@ -104,7 +104,6 @@ Yakedo Aruzu;Gakusha Ashin;amitié;affection;rp
 Seijuu Shānyùe;Uzumaki Aeonya;hostilité;;rp
 Hiname;Takahashi Renji;compliqué;;rp
 Hiname;Yamamoto Nobu;respect;;rp
-Hiname;Tachibana;respect;;rp
 Hiname;Keshin;professionnel;;rp
 Hiname;Date Hanzo;amitié;amitié;rp
 Hiname;Aburame Yokoshima;hostilité;;rp
@@ -137,7 +136,7 @@ Hayami;Seijuu Shānyùe;compliqué;;rp
 Hayami;Fujiwara Kamui;respect;;rp
 Hayami;Date Hanzo;respect;;rp
 Hayami;Uzumaki Ran;hostilité;;rp
-Hayami;Tachibana;professionnel;;rp
+Hayami;Tachibana;professionnel;élève;rp
 Gakusha Ashin;Hiname;affection;affection;rp
 Gakusha Ashin;Fujiwara Gen'ichiro;amitié;;rp
 Gakusha Ashin;Fujiwara Kamui;amitié;;rp
@@ -158,3 +157,9 @@ Gakusha Ashin;Fujiwara Iwao;simp;;rp
 Gakusha Ashin;Nara Kuenai;respect;;rp
 Gakusha Ashin;Hyūga Eimei;respect;;rp
 Gakusha Ashin;Hyūga Tatsuya;amitié;;rp
+Tachibana;Uzumaki Aeonya;amitié;;rp
+Tachibana;Shirakawa Yūna;respect;;rp
+Tachibana;Yumiya Keishi;professionnel;;rp
+Tachibana;Kensho;hostilité;;rp
+Tachibana;Cho Takashi;hostilité;;rp
+Tachibana;Soragoto Shinri;hostilité;;rp
